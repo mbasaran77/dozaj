@@ -1,0 +1,20 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} adc
+    VAR_INPUT
+        giriş : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        çıkış : BOOL;
+    END_VAR
+    VAR_INPUT
+        analogIn : INT;
+        skala : REAL;
+        offset : INT;
+        avarage : INT;
+    END_VAR
+    VAR_OUTPUT
+        scaledValReal : REAL;
+    END_VAR
+END_FUNCTION_BLOCK
+

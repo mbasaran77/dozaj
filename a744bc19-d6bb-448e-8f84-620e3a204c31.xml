@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF tartma_tamam1 OR tartma_tamam2 OR tartma_tamam3 OR tartma_tamam4  OR tartma_tamam5 
+OR tartma_tamam6  OR tartma_tamam7  OR tartma_tamam8  OR tartma_tamam9  OR tartma_tamam10
+OR tartma_tamam11   OR tartma_tamam12   OR tartma_tamam13  OR tartma_tamam14  OR tartma_tamam15 
+OR tartma_tamam16  OR tartma_tamam17  OR tartma_tamam18  OR tartma_tamam19  OR tartma_tamam20 
+OR tartma_tamam21  OR tartma_tamam22  OR tartma_tamam23  OR tartma_tamam24  OR tartma_tamam25
+OR tartma_tamam26  OR tartma_tamam27  OR tartma_tamam28  OR tartma_tamam29  OR tartma_tamam30 
+OR tartma_tamam31  OR tartma_tamam32  OR tartma_tamam33  OR tartma_tamam34  OR tartma_tamam35  
+OR tartma_tamam36  OR tartma_tamam37  OR tartma_tamam38  OR tartma_tamam39 OR tartma_tamam40 then
+	   tartma_tamam:=TRUE;
+ELSE
+	tartma_tamam:=FALSE;
+END_IF;</Text></StructuredText></data>

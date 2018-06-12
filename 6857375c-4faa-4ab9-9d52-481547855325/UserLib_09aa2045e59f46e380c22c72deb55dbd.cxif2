@@ -1,0 +1,14 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} artma_kontrol
+    VAR_INPUT
+        excute : BOOL;
+        tartim : REAL;
+        miktar : REAL;
+        period : TIME;
+    END_VAR
+    VAR_OUTPUT
+        artma_yetersiz : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

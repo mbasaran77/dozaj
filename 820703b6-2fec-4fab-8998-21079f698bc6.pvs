@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <columns>
+    <column name="status" index="0" visible="true" width="25" />
+    <column name="index" index="1" visible="true" width="60" />
+    <column name="addressDescription" index="2" visible="true" width="70" />
+    <column name="description" index="3" visible="true" width="270" />
+    <column name="value" index="4" visible="true" width="305" />
+    <column name="driveValue" index="5" visible="true" width="90" />
+    <column name="defaultValue" index="6" visible="true" width="70" />
+    <column name="range" index="7" visible="true" width="75" />
+    <column name="units" index="8" visible="true" width="60" />
+    <column name="dataAttribute" index="9" visible="true" width="100" />
+    <column name="visualizationMode" index="10" visible="false" width="100" />
+    <column name="userSelection" index="11" visible="false" width="75" />
+  </columns>
+  <favourites />
+</settings>

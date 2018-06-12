@@ -1,0 +1,68 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_f20c0662fdf94649b07b7011632eb187
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL
+    b_recete_set : ARRAY[0..3] OF REAL;
+    i_fan_termik : BOOL;
+    orotary : BOOL;
+END_VAR
+VAR_INPUT
+    fonk_enable : BOOL;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+END_VAR
+VAR_INPUT
+    arıza : BOOL;
+    reçete_hazırla : BOOL;
+END_VAR
+VAR_IN_OUT
+    tank_değiştir : BOOL;
+END_VAR
+VAR_OUTPUT
+    tank1_çalış : BOOL;
+    tank2_çalış : BOOL;
+    tank3_çalış : BOOL;
+END_VAR
+VAR_INPUT
+    recete_iptal : BOOL;
+END_VAR
+VAR_OUTPUT
+    tank4_çalış : BOOL;
+    recete_son : BOOL;
+END_VAR
+VAR_INPUT
+    tanklar_ok : BOOL;
+END_VAR
+VAR RETAIN
+    ilklendirme_bool : BOOL;
+END_VAR
+VAR
+    recete_haz_rise : BOOL;
+    my_r_trg : R_TRIG;
+    tank_seçim : INT;
+    my_tim_1 : TON;
+    my_tim_1_Q : BOOL;
+    my_tim_1_ET : TIME;
+    tartim_ok : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

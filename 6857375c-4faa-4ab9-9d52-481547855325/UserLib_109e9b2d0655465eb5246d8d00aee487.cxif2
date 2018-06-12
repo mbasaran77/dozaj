@@ -1,0 +1,23 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} siklon_bosat
+    VAR_INPUT
+        execute : BOOL;
+        miksere_bosalt : BOOL;
+        cuvala_bosalt : BOOL;
+        tarti : REAL;
+        miktar : REAL;
+        period : TIME;
+    END_VAR
+    VAR_OUTPUT
+        Done : BOOL;
+        klape_mikser : BOOL;
+        klape_cuval : BOOL;
+        klape_genel : BOOL;
+        vibrator : BOOL;
+        fan : BOOL;
+        patlac_valf : BOOL;
+        alarm : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

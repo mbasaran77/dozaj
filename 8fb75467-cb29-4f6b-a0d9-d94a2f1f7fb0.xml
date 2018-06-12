@@ -1,0 +1,11 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF motorlar THEN&#xD;
+	helezon:=TRUE;&#xD;
+	vibrasyon:=TRUE;&#xD;
+	sürücü:=TRUE;&#xD;
+	klepe:=TRUE;&#xD;
+ELSE&#xD;
+	helezon:=FALSE;&#xD;
+	vibrasyon:=FALSE;&#xD;
+	sürücü:=FALSE;&#xD;
+	klepe:=FALSE;&#xD;
+END_IF;</Text></StructuredTextModel>

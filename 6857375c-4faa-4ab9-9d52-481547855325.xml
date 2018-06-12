@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <ControllerId>35c3772b-0cb5-46bb-b7f2-4f2dfa260043</ControllerId>
+  <ControllerName></ControllerName>
+  <MajorVersion>1</MajorVersion>
+  <MinorVersion>9</MinorVersion>
+  <Revision>0</Revision>
+  <Category>Controller</Category>
+  <Family>Nex</Family>
+  <ModelName>NJ301</ModelName>
+  <ModelDetail>1100</ModelDetail>
+  <SystemErrorMessageDisplayLanguageSetting>en-US,ja-JP</SystemErrorMessageDisplayLanguageSetting>
+  <IsDuplicateIdOptimized>true</IsDuplicateIdOptimized>
+  <IsWithoutCommentTransfer>false</IsWithoutCommentTransfer>
+  <CommuncationSetting>
+    <StartupMode>Normal</StartupMode>
+    <BrowseType>DirectUSB</BrowseType>
+    <BrowseIpAddress></BrowseIpAddress>
+    <BrowseLinkLocalIpAddress></BrowseLinkLocalIpAddress>
+    <BrowsePortNo></BrowsePortNo>
+    <BrowsePhysicalAddress></BrowsePhysicalAddress>
+    <BrowseModel></BrowseModel>
+    <BrowseName></BrowseName>
+    <BrowseUnitVersion></BrowseUnitVersion>
+    <NexProductID>K01-30X14-1121</NexProductID>
+    <CommsType>RemoteEthernet</CommsType>
+    <CommsUseDirectUSB>False</CommsUseDirectUSB>
+    <CommsUseDirectEtn>False</CommsUseDirectEtn>
+    <CommsUseRemoteUSB>False</CommsUseRemoteUSB>
+    <CommsUseRemoteEtn>False</CommsUseRemoteEtn>
+    <CommsRemortIPAddress>192.168.250.2</CommsRemortIPAddress>
+    <CommsRemortPortNo></CommsRemortPortNo>
+    <CommsTimeout>2000</CommsTimeout>
+    <CommsCheckNameID>True</CommsCheckNameID>
+    <CommsCheckForceStatus>True</CommsCheckForceStatus>
+  </CommuncationSetting>
+</data>

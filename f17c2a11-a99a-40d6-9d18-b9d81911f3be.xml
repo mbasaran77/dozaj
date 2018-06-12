@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF b_inv_1 OR b_inv_2 OR b_inv_3 OR b_inv_4 OR b_inv_5  or test_helezon_aktif THEN
+	bigbag_inv_çalış:=1;
+ELSE
+	bigbag_inv_çalış:=0;
+END_IF;
+IF test_helezon_aktif THEN
+	bigbag_inv_set_fr:=bb_helezon_test_speed;
+END_IF;
+
+b_inv_fr_ekran:=bigbag_inv_fr_ekran;
+IF b_inv_1 THEN
+	bigbag_inv_set_fr:=b_inv_1_fr;
+end_if;
+IF b_inv_2 THEN
+	bigbag_inv_set_fr:=b_inv_2_fr;
+end_if;
+IF b_inv_3 THEN
+	bigbag_inv_set_fr:=b_inv_3_fr;
+end_if;
+IF b_inv_4 THEN
+	bigbag_inv_set_fr:=b_inv_4_fr;
+end_if;
+IF b_inv_5  THEN
+	bigbag_inv_set_fr:=1000;   (* rotary için düşük hız *)
+END_IF;</Text></StructuredText></data>

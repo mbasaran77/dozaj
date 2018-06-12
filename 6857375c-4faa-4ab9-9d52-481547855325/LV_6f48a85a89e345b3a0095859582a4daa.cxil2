@@ -1,0 +1,44 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_6f48a85a89e345b3a0095859582a4daa
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    giriş : BOOL;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+END_VAR
+VAR_INPUT
+    analogIn : INT;
+    skala : REAL;
+    offset : INT;
+    avarage : INT;
+END_VAR
+VAR_OUTPUT
+    scaledValReal : REAL;
+END_VAR
+VAR
+    index : INT;
+    intChStack : INT;
+    dChStack : DINT;
+    real_0 : REAL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

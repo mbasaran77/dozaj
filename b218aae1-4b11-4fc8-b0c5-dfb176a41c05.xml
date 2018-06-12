@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF m_stok_guncelle THEN
+	FOR index:=0 TO 39 DO
+		m_stok_arr[index]:=m_stok_arr_ekr[index];
+	END_FOR;
+	m_stok_guncelle:=FALSE;
+END_IF;
+
+IF b_stok_guncelle THEN
+	FOR index:=0 TO 3 DO
+		b_stok_arr[index]:=b_stok_arr_ekr[index];
+	END_FOR;
+	b_stok_guncelle:=FALSE;
+END_IF;</Text></StructuredText></data>

@@ -1,0 +1,17 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} recete_bigbag
+    VAR_INPUT
+        giriş : BOOL;
+        receteNo : INT;
+        programNo : INT;
+    END_VAR
+    VAR_OUTPUT
+        çıkış : BOOL;
+        tank1set : REAL;
+        tank2set : REAL;
+        tank3set : REAL;
+        tank4set : REAL;
+    END_VAR
+END_FUNCTION_BLOCK
+

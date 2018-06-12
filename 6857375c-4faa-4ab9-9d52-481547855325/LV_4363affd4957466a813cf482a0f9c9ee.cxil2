@@ -1,0 +1,58 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_4363affd4957466a813cf482a0f9c9ee
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL
+    b_recete_set : ARRAY[0..3] OF REAL;
+END_VAR
+VAR_INPUT
+    giriş : BOOL;
+    receteNo : INT;
+    programNo : INT;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+    tank1set : REAL;
+    tank2set : REAL;
+    tank3set : REAL;
+    tank4set : REAL;
+END_VAR
+VAR RETAIN
+    receteK AT %IOM://d2000 : ARRAY[0..3] OF REAL;
+    tank1 AT %IOM://d0 : REAL;
+    tank2 AT %IOM://d2 : REAL;
+    tank3 AT %IOM://d4 : REAL;
+    tank4 AT %IOM://d6 : REAL;
+    Recete AT %IOM://d2010 : ARRAY[0..199] OF REAL;
+    b_tank1_ekr AT %IOM://d500 : REAL;
+    b_tank2_ekr AT %IOM://d502 : REAL;
+    b_tank3_ekr AT %IOM://d504 : REAL;
+    b_tank4_ekr AT %IOM://d506 : REAL;
+END_VAR
+VAR
+    index : INT;
+    pointer : INT;
+    receteKayit AT %IOM://w10.04 : BOOL;
+    prg_sil AT %IOM://w10.06 : BOOL;
+    m : INT;
+    n : INT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

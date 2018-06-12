@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF servo_fab_ayar THEN
+	servo_fab_ayar:=FALSE;
+	ekr_poz1:=-2870.00;
+	ekr_poz2:=-2520.00;
+	ekr_poz3:=-2150.00;
+	ekr_poz4:=-1800.00;
+	ekr_poz5:=-1450.00;
+	ekr_poz6:=-1050.00;
+	ekr_poz7:=-710.00;
+	ekr_poz8:=-360.00;
+	ekr_poz9:=0.00;	
+	ekr_poz10:=345.00;
+	ekr_poz11:=700.00;
+	ekr_poz12:=1045.00;
+	ekr_poz13:=1390.00;
+	ekr_poz14:=1780.00;
+	ekr_poz15:=2130.00;
+	ekr_poz16:=2485.00;
+	ekr_poz17:=2825.00;
+	ekr_poz18:=3190.00;
+	ekr_poz19:=3550.00;
+	ekr_poz20:=3900.00;
+END_IF;</Text></StructuredText></data>

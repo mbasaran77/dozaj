@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application schemaVersion="1">
+  <ApplicationVersionHistory>
+    <UpdatedSysmacStudioVersion name="Sysmac Studio" version="1.1.7.20" action="Created" date="2016/10/26" />
+    <UpdatedSysmacStudioVersion name="Sysmac Studio" version="1.18.0.15" action="Updated" date="2017/06/14" />
+    <UpdatedSysmacStudioVersion name="Sysmac Studio" version="1.23.0.14" action="Updated" date="2018/06/11" />
+  </ApplicationVersionHistory>
+</Application>

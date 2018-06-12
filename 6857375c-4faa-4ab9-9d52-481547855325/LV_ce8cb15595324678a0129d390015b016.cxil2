@@ -1,0 +1,131 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_ce8cb15595324678a0129d390015b016
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL
+    orotary : BOOL;
+END_VAR
+VAR_INPUT
+    fonk_enable : BOOL;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+END_VAR
+VAR_INPUT
+    arıza : BOOL;
+    rec_hazırla : BOOL;
+    tank_değiştir : BOOL;
+END_VAR
+VAR_OUTPUT
+    çalış1 : BOOL;
+    çalış2 : BOOL;
+    çalış3 : BOOL;
+    çalış4 : BOOL;
+    çalış5 : BOOL;
+    çalış6 : BOOL;
+    çalış7 : BOOL;
+    çalış8 : BOOL;
+    çalış9 : BOOL;
+    çalış10 : BOOL;
+    çalış11 : BOOL;
+    çalış12 : BOOL;
+    çalış13 : BOOL;
+    çalış14 : BOOL;
+    çalış15 : BOOL;
+    çalış16 : BOOL;
+    çalış17 : BOOL;
+    çalış18 : BOOL;
+    çalış19 : BOOL;
+    çalış20 : BOOL;
+    çalış21 : BOOL;
+    çalış22 : BOOL;
+    çalış23 : BOOL;
+    çalış24 : BOOL;
+    çalış25 : BOOL;
+    çalış26 : BOOL;
+    çalış27 : BOOL;
+    çalış28 : BOOL;
+    çalış29 : BOOL;
+    çalış30 : BOOL;
+    çalış31 : BOOL;
+    çalış32 : BOOL;
+    çalış33 : BOOL;
+    çalış34 : BOOL;
+    çalış35 : BOOL;
+    çalış36 : BOOL;
+    çalış37 : BOOL;
+    çalış38 : BOOL;
+    çalış39 : BOOL;
+    çalış40 : BOOL;
+END_VAR
+VAR_IN_OUT
+    tank_seçim : INT;
+END_VAR
+VAR_OUTPUT
+    tartim_ok : BOOL;
+END_VAR
+VAR RETAIN
+    m_tank_ekr1 AT %IOM://d508 : REAL;
+    m_tank_ekr18 AT %IOM://d542 : REAL;
+    m_tank_ekr19 AT %IOM://d544 : REAL;
+    m_tank_ekr2 AT %IOM://d510 : REAL;
+    m_tank_ekr20 AT %IOM://d546 : REAL;
+    m_tank_ekr21 AT %IOM://d548 : REAL;
+    m_tank_ekr22 AT %IOM://d550 : REAL;
+    m_tank_ekr23 AT %IOM://d552 : REAL;
+    m_tank_ekr24 AT %IOM://d554 : REAL;
+    m_tank_ekr25 AT %IOM://d556 : REAL;
+    m_tank_ekr26 AT %IOM://d558 : REAL;
+    m_tank_ekr27 AT %IOM://d560 : REAL;
+    m_tank_ekr28 AT %IOM://d562 : REAL;
+    m_tank_ekr29 AT %IOM://d564 : REAL;
+    m_tank_ekr3 AT %IOM://d512 : REAL;
+    m_tank_ekr30 AT %IOM://d566 : REAL;
+    m_tank_ekr31 AT %IOM://d568 : REAL;
+    m_tank_ekr32 AT %IOM://d570 : REAL;
+    m_tank_ekr33 AT %IOM://d572 : REAL;
+    m_tank_ekr34 AT %IOM://d574 : REAL;
+    m_tank_ekr35 AT %IOM://d576 : REAL;
+    m_tank_ekr36 AT %IOM://d578 : REAL;
+    m_tank_ekr37 AT %IOM://d580 : REAL;
+    m_tank_ekr38 AT %IOM://d582 : REAL;
+    m_tank_ekr39 AT %IOM://d584 : REAL;
+    m_tank_ekr4 AT %IOM://d514 : REAL;
+    m_tank_ekr40 AT %IOM://d586 : REAL;
+    m_tank_ekr5 AT %IOM://d516 : REAL;
+    m_tank_ekr6 AT %IOM://d518 : REAL;
+    m_tank_ekr7 AT %IOM://d520 : REAL;
+    m_tank_ekr8 AT %IOM://d522 : REAL;
+    m_tank_ekr9 AT %IOM://d524 : REAL;
+    m_tank_ekr10 AT %IOM://d526 : REAL;
+    m_tank_ekr11 AT %IOM://d528 : REAL;
+    m_tank_ekr12 AT %IOM://d530 : REAL;
+    m_tank_ekr13 AT %IOM://d532 : REAL;
+    m_tank_ekr14 AT %IOM://d534 : REAL;
+    m_tank_ekr15 AT %IOM://d536 : REAL;
+    m_tank_ekr16 AT %IOM://d538 : REAL;
+    m_tank_ekr17 AT %IOM://d540 : REAL;
+    fonk_start : BOOL;
+END_VAR
+VAR
+    riseEdge_1 : R_TRIG;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

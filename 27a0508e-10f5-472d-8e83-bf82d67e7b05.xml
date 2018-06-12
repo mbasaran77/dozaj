@@ -1,0 +1,10 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>index:=index+1;&#xD;
+dChStack:=dChStack+INT_TO_DINT(analogIn); &#xD;
+&#xD;
+IF index&gt;=avarage THEN&#xD;
+	intChStack:=DINT_TO_INT(dChStack/INT_TO_DINT(avarage));&#xD;
+	scaledValReal:= INT_TO_REAL(intChStack-offset)/skala;&#xD;
+	index:=0;&#xD;
+	dChStack:=0;&#xD;
+END_IF;&#xD;
+</Text></StructuredTextModel>

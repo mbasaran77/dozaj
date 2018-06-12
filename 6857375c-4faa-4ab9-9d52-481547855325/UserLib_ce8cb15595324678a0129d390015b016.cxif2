@@ -1,0 +1,64 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} mik_rec_tank_seç
+    VAR_INPUT
+        fonk_enable : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        çıkış : BOOL;
+    END_VAR
+    VAR_INPUT
+        arıza : BOOL;
+        rec_hazırla : BOOL;
+        tank_değiştir : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        çalış1 : BOOL;
+        çalış2 : BOOL;
+        çalış3 : BOOL;
+        çalış4 : BOOL;
+        çalış5 : BOOL;
+        çalış6 : BOOL;
+        çalış7 : BOOL;
+        çalış8 : BOOL;
+        çalış9 : BOOL;
+        çalış10 : BOOL;
+        çalış11 : BOOL;
+        çalış12 : BOOL;
+        çalış13 : BOOL;
+        çalış14 : BOOL;
+        çalış15 : BOOL;
+        çalış16 : BOOL;
+        çalış17 : BOOL;
+        çalış18 : BOOL;
+        çalış19 : BOOL;
+        çalış20 : BOOL;
+        çalış21 : BOOL;
+        çalış22 : BOOL;
+        çalış23 : BOOL;
+        çalış24 : BOOL;
+        çalış25 : BOOL;
+        çalış26 : BOOL;
+        çalış27 : BOOL;
+        çalış28 : BOOL;
+        çalış29 : BOOL;
+        çalış30 : BOOL;
+        çalış31 : BOOL;
+        çalış32 : BOOL;
+        çalış33 : BOOL;
+        çalış34 : BOOL;
+        çalış35 : BOOL;
+        çalış36 : BOOL;
+        çalış37 : BOOL;
+        çalış38 : BOOL;
+        çalış39 : BOOL;
+        çalış40 : BOOL;
+    END_VAR
+    VAR_IN_OUT
+        tank_seçim : INT;
+    END_VAR
+    VAR_OUTPUT
+        tartim_ok : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

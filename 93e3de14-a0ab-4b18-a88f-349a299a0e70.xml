@@ -1,0 +1,26 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>r_edge_1(Clk:=excute);&#xD;
+&#xD;
+IF r_edge_1.Q and state =0 THEN&#xD;
+	state :=1;&#xD;
+END_IF;&#xD;
+&#xD;
+IF excute THEN&#xD;
+	CASE state OF&#xD;
+	1: ilk_tartim := tartim;&#xD;
+		state := 2;&#xD;
+	2: 	timer_on_1(In:= TRUE,PT:=period);&#xD;
+		eksilme_yetersiz := FALSE;&#xD;
+		IF timer_on_1.Q THEN&#xD;
+			son_tartim :=tartim;&#xD;
+			state:=3;&#xD;
+		END_IF;&#xD;
+	3: hedef := ilk_tartim - miktar ;&#xD;
+		IF son_tartim&gt; hedef THEN&#xD;
+		eksilme_yetersiz := TRUE;&#xD;
+		state :=1 ;&#xD;
+		ELSE&#xD;
+		state := 1;			&#xD;
+		END_IF;&#xD;
+	END_CASE;&#xD;
+	&#xD;
+END_IF;</Text></StructuredTextModel>

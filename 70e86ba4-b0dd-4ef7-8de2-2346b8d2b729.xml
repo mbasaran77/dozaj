@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Servo>
+  <IODeviceID>cd9a0d55-ff47-4a58-9a4a-85f226309531</IODeviceID>
+  <SlaveData>
+    <VendorId>131</VendorId>
+    <ProductCode>11</ProductCode>
+    <Revision>131073</Revision>
+    <TypeName>R88D-KN06F-ECT</TypeName>
+    <DeviceName>servo3</DeviceName>
+    <Family>R88D-KN</Family>
+    <Model>R88D-KN06F-ECT</Model>
+    <Firmware>2.1x</Firmware>
+    <IODeviceID>cd9a0d55-ff47-4a58-9a4a-85f226309531</IODeviceID>
+    <Address Value="2" />
+  </SlaveData>
+</Servo>

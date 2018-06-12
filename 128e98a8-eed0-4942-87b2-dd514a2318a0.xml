@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>servo_ileri_hızı:=REAL_TO_LREAL(ileri_hızı);
+servo_hızlanma:=REAL_TO_LREAL(hızlama);
+servo_yavaşlama:=REAL_TO_LREAL(yavaşlama);
+servo_geri_hızı:=REAL_TO_LREAL(dönüş_hızı);
+servo_jog_hızı:=REAL_TO_LREAL(jog_hızı);
+poz_set1:=REAL_TO_LREAL(ekr_poz1);
+poz_set2:=REAL_TO_LREAL(ekr_poz2);
+poz_set3:=REAL_TO_LREAL(ekr_poz3);
+poz_set4:=REAL_TO_LREAL(ekr_poz4);
+poz_set5:=REAL_TO_LREAL(ekr_poz5);
+poz_set6:=REAL_TO_LREAL(ekr_poz6);
+poz_set7:=REAL_TO_LREAL(ekr_poz7);
+poz_set8:=REAL_TO_LREAL(ekr_poz8);
+poz_set9:=REAL_TO_LREAL(ekr_poz9);
+poz_set10:=REAL_TO_LREAL(ekr_poz10);
+poz_set11:=REAL_TO_LREAL(ekr_poz11);
+poz_set12:=REAL_TO_LREAL(ekr_poz12);
+poz_set13:=REAL_TO_LREAL(ekr_poz13);
+poz_set14:=REAL_TO_LREAL(ekr_poz14);
+poz_set15:=REAL_TO_LREAL(ekr_poz15);
+poz_set16:=REAL_TO_LREAL(ekr_poz16);
+poz_set17:=REAL_TO_LREAL(ekr_poz17);
+poz_set18:=REAL_TO_LREAL(ekr_poz18);
+poz_set19:=REAL_TO_LREAL(ekr_poz19);
+poz_set20:=REAL_TO_LREAL(ekr_poz20);
+poz_kefe:=REAL_TO_LREAL(ekr_kefe_pozisyon);
+poz_kova := REAL_TO_LREAL(ekr_kova_pozisyon);</Text></StructuredText></data>

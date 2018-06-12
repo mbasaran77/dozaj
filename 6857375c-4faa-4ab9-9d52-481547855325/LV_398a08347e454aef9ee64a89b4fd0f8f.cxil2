@@ -1,0 +1,38 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_398a08347e454aef9ee64a89b4fd0f8f
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    giriş : BOOL;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+END_VAR
+VAR_INPUT
+    motorlar : BOOL;
+END_VAR
+VAR_OUTPUT
+    helezon : BOOL;
+    vibrasyon : BOOL;
+    sürücü : BOOL;
+    klepe : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

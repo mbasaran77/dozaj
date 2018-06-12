@@ -1,0 +1,6 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>	if kilo&lt;=0.005 AND kilo&gt;=-0.005  THEN&#xD;
+		kilosıfır:= TRUE;&#xD;
+	ELSE &#xD;
+		kilosıfır:= FALSE;&#xD;
+	END_IF;&#xD;
+	</Text></StructuredTextModel>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <VariableGroup Name="VAR" Attribute="" ViewType="DefaultGroup">
+    <Variable DataTypeName="BOOL" Name="P_On" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="721240f3-1dee-4324-b6bc-8577d4ec2556" Order="" IsControllerVariable="true" IsReadOnly="false" IsConstant="true" Group="VAR" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+    <Variable DataTypeName="BOOL" Name="P_Off" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="158f4e57-41dd-4c52-a682-79705803b8eb" Order="" IsControllerVariable="true" IsReadOnly="false" IsConstant="true" Group="VAR" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+    <Variable DataTypeName="BOOL" Name="P_PRGER" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="377341e4-373b-4c1e-9d2e-283457bade78" Order="" IsControllerVariable="true" IsReadOnly="false" IsConstant="false" Group="VAR" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+    <Variable DataTypeName="BOOL" Name="P_CY" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="4bd68139-e87f-4a6c-b12e-ed59bb3afbf4" Order="" IsControllerVariable="true" IsReadOnly="false" IsConstant="true" Group="VAR" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+    <Variable DataTypeName="BOOL" Name="P_First_RunMode" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="b51c07a7-4a7c-402f-9bdd-2b7a7852d1e7" Order="" IsControllerVariable="true" IsReadOnly="false" IsConstant="true" Group="VAR" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+    <Variable DataTypeName="BOOL" Name="P_First_Run" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="49557a12-5409-497e-900a-0caba9c07394" Order="" IsControllerVariable="true" IsReadOnly="false" IsConstant="true" Group="VAR" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+  </VariableGroup>
+  <VariableGroup Name="VAR_EXTERNAL" Attribute="External" ViewType="ExternalGroup" />
+</data>

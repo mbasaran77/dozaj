@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>(*axis status*)
+IF _MC_AX[0].Status.Ready=TRUE THEN
+	word_0:=1;
+ELSIF _MC_AX[0].Status.Disabled=TRUE THEN
+	word_0:=2;
+ELSIF _MC_AX[0].Status.Standstill=TRUE THEN
+	word_0:=3;
+ELSIF _MC_AX[0].Status.Discrete=TRUE THEN
+	word_0:=4;
+ELSIF _MC_AX[0].Status.Continuous=TRUE THEN
+	word_0:=5;
+ELSIF _MC_AX[0].Status.Synchronized=TRUE THEN
+	word_0:=6;
+ELSIF _MC_AX[0].Status.Homing=TRUE THEN
+	word_0:=7;
+ELSIF _MC_AX[0].Status.Stopping=TRUE THEN
+	word_0:=8;
+ELSIF _MC_AX[0].Status.ErrorStop=TRUE THEN
+	word_0:=9;
+ELSIF _MC_AX[0].Status.Coordinated=TRUE THEN
+	word_0:=10;
+END_IF;
+
+IF _MC_AX[0].DrvStatus.ServoOn=TRUE THEN
+	word_0:=1;
+ELSIF _MC_AX[0].DrvStatus.Ready=TRUE THEN
+	word_0:=2;
+ELSIF _MC_AX[0].DrvStatus.MainPower=TRUE THEN
+	word_0:=3;
+ELSIF _MC_AX[0].DrvStatus.P_OT=TRUE THEN
+	word_0:=4;
+ELSIF _MC_AX[0].DrvStatus.N_OT=TRUE THEN
+	word_0:=5;
+ELSIF _MC_AX[0].DrvStatus.HomeSw=TRUE THEN
+	word_0:=6;
+END_IF;
+
+</Text></StructuredText></data>

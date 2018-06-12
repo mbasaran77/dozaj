@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF t_b_helezon1 OR t_b_helezon2 OR t_b_helezon3 OR t_b_helezon4  OR t_b_rotary THEN
+	test_helezon_aktif:=TRUE;
+ELSE
+	test_helezon_aktif:=FALSE;
+END_IF;
+IF t_b_helezon1 THEN
+	t_b_helezon2:=FALSE;
+	t_b_helezon3:=FALSE;
+	t_b_helezon4:=FALSE;
+	t_b_rotary:=FALSE;
+END_IF;
+IF t_b_helezon2 THEN
+	t_b_helezon1:=FALSE;
+	t_b_helezon3:=FALSE;
+	t_b_helezon4:=FALSE;
+	t_b_rotary:=FALSE;
+END_IF;
+IF t_b_helezon3 THEN
+	t_b_helezon1:=FALSE;
+	t_b_helezon2:=FALSE;
+	t_b_helezon4:=FALSE;
+	t_b_rotary:=FALSE;
+END_IF;
+IF t_b_helezon4 THEN
+	t_b_helezon2:=FALSE;
+	t_b_helezon3:=FALSE;
+	t_b_helezon1:=FALSE;
+	t_b_rotary:=FALSE;
+END_IF;
+IF t_b_rotary THEN
+	t_b_helezon1:=FALSE;
+	t_b_helezon2:=FALSE;
+	t_b_helezon3:=FALSE;
+	t_b_helezon4:=FALSE;
+END_IF;
+word_ekr_SiklonOut:=word_siklonOut;
+word_ekr_SiklonInput:=word_SiklonInput;</Text></StructuredText></data>

@@ -1,0 +1,64 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_60809a1386074beb8807685e81cf39b8
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL
+    m_stok_arr : ARRAY[0..39] OF REAL;
+    i_fan_termik : BOOL;
+    m_tartim_hata : ARRAY[0..39] OF REAL;
+END_VAR
+VAR_INPUT
+    giriş : BOOL;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+END_VAR
+VAR_INPUT
+    set_değer : REAL;
+    tartım : REAL;
+    çalış : BOOL;
+END_VAR
+VAR_OUTPUT
+    kare_dalga : BOOL;
+    vib_seçim : BOOL;
+    tartma_tamam : BOOL;
+    air_vib : BOOL;
+END_VAR
+VAR_INPUT
+    pozisyon : BOOL;
+    tankNo : INT;
+END_VAR
+VAR RETAIN
+    hedef_kg : REAL;
+    hedef_offset : REAL;
+    tartı_sıfırla : BOOL;
+END_VAR
+VAR
+    vib_puls : \\m_vib_puls;
+    t0 : TON;
+    tam : BOOL;
+    t00 : BOOL;
+    yarım : BOOL;
+    my_r_trig : R_TRIG;
+    tartım_sıfırla_r : BOOL;
+    fark : REAL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

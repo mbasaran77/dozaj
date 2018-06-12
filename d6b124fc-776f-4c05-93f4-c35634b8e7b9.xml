@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF ekr_bb_siklona_gönder AND -0.05&lt;=siklon_tartım AND siklon_tartım&lt;=0.05 and bb_rec_hazırla=false THEN
+	siklon_boş:=TRUE;
+ELSE
+	siklon_boş:=FALSE;
+END_IF;
+</Text></StructuredText></data>

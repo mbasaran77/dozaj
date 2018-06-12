@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF m_rotary_çalış THEN
+	mikro_rotary_çalış:=1;
+	mikro_rotary_set_frekansı:=ekr_m_rotary_fr;
+END_IF;
+IF m_rotary_çalış=FALSE THEN
+	mikro_rotary_çalış:=0;
+	mikro_rotary_set_frekansı:=0;
+END_if;
+m_rotary_fr_to_ekr:=mikro_rotary_çıkış_fr_ekran;</Text></StructuredText></data>

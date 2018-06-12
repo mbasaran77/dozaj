@@ -1,0 +1,94 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_9013f32ad57e4327a2bc70ee0ddcc873
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL
+    m_tank_ekr_arr : ARRAY[0..40] OF REAL;
+    i_fan_termik : BOOL;
+    iacil_stop : BOOL;
+END_VAR
+VAR_INPUT
+    giriş : BOOL;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+    tankset1 : REAL;
+    tankset2 : REAL;
+    tankset3 : REAL;
+    tankset4 : REAL;
+    tankset5 : REAL;
+    tankset6 : REAL;
+    tankset7 : REAL;
+    tankset8 : REAL;
+    tankset9 : REAL;
+    tankset10 : REAL;
+    tankset11 : REAL;
+    tankset12 : REAL;
+    tankset13 : REAL;
+    tankset14 : REAL;
+    tankset15 : REAL;
+    tankset16 : REAL;
+    tankset17 : REAL;
+    tankset18 : REAL;
+    tankset19 : REAL;
+    tankset20 : REAL;
+    tankset21 : REAL;
+    tankset22 : REAL;
+    tankset23 : REAL;
+    tankset24 : REAL;
+    tankset25 : REAL;
+    tankset26 : REAL;
+    tankset27 : REAL;
+    tankset28 : REAL;
+    tankset29 : REAL;
+    tankset30 : REAL;
+    tankset31 : REAL;
+    tankset32 : REAL;
+    tankset33 : REAL;
+    tankset34 : REAL;
+    tankset35 : REAL;
+    tankset36 : REAL;
+    tankset37 : REAL;
+    tankset38 : REAL;
+    tankset39 : REAL;
+    tankset40 : REAL;
+END_VAR
+VAR_INPUT
+    receteNo : INT;
+    programNo : INT;
+END_VAR
+VAR RETAIN
+    receteKM AT %IOM://d7000 : ARRAY[0..39] OF REAL;
+    b_recete_setM AT %IOM://d7100 : ARRAY[0..39] OF REAL;
+    receteM AT %IOM://d2500 : ARRAY[0..1999] OF REAL;
+    m_rec_arr AT %IOM://d8 : ARRAY[0..40] OF REAL;
+END_VAR
+VAR
+    receteKay AT %IOM://w10.08 : BOOL;
+    m_prg_sil AT %IOM://w10.07 : BOOL;
+    indeks : INT;
+    point : INT;
+    recover_prgNo : INT;
+    prg_no_degisti : BOOL;
+    b : INT;
+    a : INT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

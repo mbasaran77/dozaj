@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<connectionInformation>
+  <connections>
+    <connection>
+      <nodes>
+        <node address="255.255.255.255" protocolType="Http" />
+        <node address="2" protocolType="Ethercat" />
+      </nodes>
+      <portSettings timeout="00:00:00" portType="Ethernet" />
+    </connection>
+    <connection>
+      <nodes>
+        <node address="1" protocolType="GCommandUsb" />
+      </nodes>
+      <portSettings timeout="00:00:02" portType="Usb" address="0" />
+    </connection>
+  </connections>
+</connectionInformation>

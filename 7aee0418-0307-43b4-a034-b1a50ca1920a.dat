@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="2171400" Revision="16777216" IONodeID="6d982e05-9da3-4dac-a624-38ee2721f78f" DeviceName="N7" SerialNo="0" IsEnabled="1">
+  <Parameter Index="20482" SubIndex="1" Value="True" />
+  <Parameter Index="20482" SubIndex="2" Value="False" />
+  <Parameter Index="20483" SubIndex="1" Value="0" />
+  <Parameter Index="20483" SubIndex="2" Value="0" />
+  <Parameter Index="20484" SubIndex="1" Value="0" />
+  <Parameter Index="20484" SubIndex="2" Value="0" />
+  <Parameter Index="16385" SubIndex="1" Value="1693450240" />
+  <Parameter Index="16385" SubIndex="2" Value="4" />
+  <Parameter Index="16385" SubIndex="3" Value="1693974528" />
+  <Parameter Index="16385" SubIndex="4" Value="4" />
+  <Parameter Index="16385" SubIndex="5" Value="1694695424" />
+  <Parameter Index="16385" SubIndex="6" Value="3" />
+  <Parameter Index="16385" SubIndex="7" Value="1694760960" />
+  <Parameter Index="16385" SubIndex="8" Value="3" />
+  <IOPort IOPortID="52228be4-3a44-48b4-ae4a-92b999a90278" Index="24576" SubIndex="1" />
+  <IOPort IOPortID="94a030ca-e6ce-42cc-9dd5-cbf838ea7ce8" Index="24576" SubIndex="2" />
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="52228be4-3a44-48b4-ae4a-92b999a90278" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="94a030ca-e6ce-42cc-9dd5-cbf838ea7ce8" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

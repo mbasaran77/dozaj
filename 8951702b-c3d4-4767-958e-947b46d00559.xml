@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF-0.15&lt;=m_tartı AND m_tartı&lt;=0.15 THEN
+	m_tartı_boş:=TRUE;
+ELSE
+	m_tartı_boş:=FALSE;
+END_IF;
+
+IF ekr_m_rec_hazırla AND m_tartı_boş THEN
+	m_rec_haz:=TRUE;
+END_IF;
+IF ekr_acil_stop THEN
+	ekr_m_rec_hazırla := FALSE;
+END_IF;
+IF m_arıza_var  or ekr_acil_stop or ekr_m_rec_hazırla = FALSE THEN
+	m_rec_haz:=FALSE;
+	m_dolu_çalış:=FALSE;
+END_IF;
+IF ekr_m_rec_hazırla AND m_tartı_boş=FALSE THEN
+	m_dolu_sorma:=TRUE; //gerekli mi bilemedim
+END_IF;</Text></StructuredText></data>

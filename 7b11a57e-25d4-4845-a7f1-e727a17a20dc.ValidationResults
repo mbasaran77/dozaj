@@ -1,0 +1,1 @@
+<ValidationResults xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.Validation.Services" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><ApplicationVersion>1.23.0.14</ApplicationVersion><InvalidEntityIds xmlns:a="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/><LastSavedDateTime>06/11/2018 16:44:07</LastSavedDateTime></ValidationResults>

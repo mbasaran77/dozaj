@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module VenderID="1" ProductCode="2171400" Revision="16777216" IONodeID="117ae64b-430a-4248-9d30-8feb25c8981d" DeviceName="N13_1" SerialNo="0" IsEnabled="1">
+  <Parameter Index="20482" SubIndex="1" Value="True" />
+  <Parameter Index="20482" SubIndex="2" Value="False" />
+  <Parameter Index="20483" SubIndex="1" Value="0" />
+  <Parameter Index="20483" SubIndex="2" Value="0" />
+  <Parameter Index="20484" SubIndex="1" Value="0" />
+  <Parameter Index="20484" SubIndex="2" Value="0" />
+  <Parameter Index="16385" SubIndex="1" Value="1693450240" />
+  <Parameter Index="16385" SubIndex="2" Value="4" />
+  <Parameter Index="16385" SubIndex="3" Value="1693974528" />
+  <Parameter Index="16385" SubIndex="4" Value="4" />
+  <Parameter Index="16385" SubIndex="5" Value="1694695424" />
+  <Parameter Index="16385" SubIndex="6" Value="3" />
+  <Parameter Index="16385" SubIndex="7" Value="1694760960" />
+  <Parameter Index="16385" SubIndex="8" Value="3" />
+  <IOPort IOPortID="d6b6da83-a2d5-4e72-ab3f-8305029a1e35" Index="24576" SubIndex="1" />
+  <IOPort IOPortID="9521ec2b-3738-43e7-b72a-647b12b9c195" Index="24576" SubIndex="2" />
+  <IOAllocation Index="6656">
+    <IOEntry>
+      <IOPortReference IOPortID="d6b6da83-a2d5-4e72-ab3f-8305029a1e35" />
+    </IOEntry>
+    <IOEntry>
+      <IOPortReference IOPortID="9521ec2b-3738-43e7-b72a-647b12b9c195" />
+    </IOEntry>
+  </IOAllocation>
+</Module>

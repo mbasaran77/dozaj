@@ -1,0 +1,35 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} big_tartım
+    VAR_INPUT
+        fonk_enable : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        çıkış : BOOL;
+    END_VAR
+    VAR_INPUT
+        tank_hedef_kg : REAL;
+        gerçek_kg : REAL;
+        recete_iptal : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        sürücü_fr : INT;
+    END_VAR
+    VAR_INPUT
+        tankNo : INT;
+    END_VAR
+    VAR_OUTPUT
+        fark : REAL;
+    END_VAR
+    VAR_INPUT
+        çalış : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        tartım_tamam : BOOL;
+        helezon : BOOL;
+        vibrasyon : BOOL;
+        sürücü : BOOL;
+        klepe : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

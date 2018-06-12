@@ -1,0 +1,53 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_ba7b00d9b43543eb8dca3999b5af4f18
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL
+    orotary : BOOL;
+END_VAR
+VAR_INPUT
+    execute : BOOL;
+    agirlik : REAL;
+    pozisyon_ok : BOOL;
+    servo_pozisyon : REAL;
+    pozisyon_set : REAL;
+    klape_açık : BOOL;
+END_VAR
+VAR_OUTPUT
+    Done : BOOL;
+    klape_aç : BOOL;
+    bunker_klape : BOOL;
+    vibrator_on : BOOL;
+END_VAR
+VAR RETAIN
+    adim : INT;
+END_VAR
+VAR
+    servo_in_pozisyon : BOOL;
+    t1_ins : TON;
+    t3_ins : TON;
+    t4_ins : TON;
+    riseEdge1 : R_TRIG;
+    t2_ins : TON;
+    deneme : BOOL;
+    bosaltma_ok : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

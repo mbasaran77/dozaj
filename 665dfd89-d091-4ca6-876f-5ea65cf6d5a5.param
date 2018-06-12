@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter index="Pn000" value="1" />
+  <parameter index="Pn004" value="229" />
+  <parameter index="Pn016" value="2" />
+  <parameter index="Pn615" value="2000" />
+  <parameter index="Pn730" value="3000" />
+  <parameter index="Pn731" value="3000" />
+  <parameter index="Pn739" value="1000000" />
+  <parameter index="Pn753" value="3000" />
+  <parameter index="Pn754" value="3000" />
+</parameters>

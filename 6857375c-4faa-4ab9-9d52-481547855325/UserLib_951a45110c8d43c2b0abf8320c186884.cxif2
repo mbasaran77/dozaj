@@ -1,0 +1,13 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} m_vib_puls
+    VAR_INPUT
+        giriş : BOOL;
+        ilk : BOOL;
+        ikinci : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        vib : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

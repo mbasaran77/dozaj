@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF ssr_röle1 OR ssr_röle2 OR ssr_röle3 OR ssr_röle4 OR ssr_röle5 OR ssr_röle6 OR ssr_röle7 OR ssr_röle8 
+OR ssr_röle9 OR ssr_röle10 OR ssr_röle11 OR ssr_röle12 OR ssr_röle13 OR ssr_röle14 OR ssr_röle15 
+OR ssr_röle16 OR ssr_röle17 OR ssr_röle18 OR ssr_röle19 OR ssr_röle20 OR ssr_röle21 OR ssr_röle22 
+OR ssr_röle23 OR ssr_röle24 OR ssr_röle25 OR ssr_röle26 OR ssr_röle27 OR ssr_röle28 OR ssr_röle29 
+OR ssr_röle30 OR ssr_röle31 OR ssr_röle32 OR ssr_röle33 OR ssr_röle34 OR ssr_röle35 OR ssr_röle36
+OR ssr_röle37 OR ssr_röle38 OR ssr_röle39 OR ssr_röle40 THEN
+	ssr_röle:=TRUE;
+ELSE
+	ssr_röle:=FALSE;
+END_IF;</Text></StructuredText></data>
