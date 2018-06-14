@@ -1,0 +1,15 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} bigbag_kontrol
+    VAR_INPUT
+        in_start : BOOL;
+        tank_secim : INT;
+        tank_no : INT;
+    END_VAR
+    VAR_OUTPUT
+        titresim_m : BOOL;
+        helezon_motor : BOOL;
+        vana : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

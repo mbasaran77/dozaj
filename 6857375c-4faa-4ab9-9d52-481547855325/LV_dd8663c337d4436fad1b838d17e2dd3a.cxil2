@@ -1,0 +1,46 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_dd8663c337d4436fad1b838d17e2dd3a
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    fonk_enable : BOOL;
+END_VAR
+VAR_OUTPUT
+    çıkış : BOOL;
+END_VAR
+VAR_INPUT
+    init : BOOL;
+    arıza : BOOL;
+    reçete_hazırla : BOOL;
+    tank_sayisi : INT;
+END_VAR
+VAR_IN_OUT
+    tank_değiştir : BOOL;
+END_VAR
+VAR_INPUT
+    b_recete_set : ARRAY[1..4] OF REAL;
+END_VAR
+VAR_OUTPUT
+    recete_son : BOOL;
+    tartim_set : REAL;
+    tank_seçim : INT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

@@ -1,0 +1,17 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} tartim_fonk_old
+    VAR_INPUT
+        tartim_start : BOOL;
+        set_wegiht : REAL;
+        gercek_weight : REAL;
+        dara_weight : REAL;
+    END_VAR
+    VAR_OUTPUT
+        set_uzaklik : REAL;
+    END_VAR
+    VAR_INPUT
+        tartim_ok : REAL;
+    END_VAR
+END_FUNCTION_BLOCK
+

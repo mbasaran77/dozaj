@@ -14,9 +14,6 @@ __END_VAR
 __VAR_SYSTEM
     P_PRGER : BOOL;
 __END_VAR
-VAR_EXTERNAL
-    orotary : BOOL;
-END_VAR
 VAR_INPUT
     fonk_enable : BOOL;
 END_VAR

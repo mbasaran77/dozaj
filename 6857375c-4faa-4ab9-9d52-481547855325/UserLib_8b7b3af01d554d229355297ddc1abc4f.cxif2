@@ -1,0 +1,12 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} bb_inv_fr_kontrol
+    VAR_INPUT
+        in_start : BOOL;
+        hedef_uzaklik : REAL;
+    END_VAR
+    VAR_OUTPUT
+        inverter_fr : INT;
+    END_VAR
+END_FUNCTION_BLOCK
+

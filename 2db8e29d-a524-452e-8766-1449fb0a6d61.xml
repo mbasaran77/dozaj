@@ -1,0 +1,12 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF in_start AND tank_secim = tank_no THEN&#xD;
+&#xD;
+vana := TRUE;&#xD;
+	titresim_m := TRUE;&#xD;
+	helezon_motor:=TRUE;&#xD;
+&#xD;
+ELSE&#xD;
+	vana := FALSE;&#xD;
+	titresim_m := FALSE;&#xD;
+	helezon_motor:=FALSE;		&#xD;
+END_IF;&#xD;
+</Text></StructuredTextModel>

@@ -1,0 +1,13 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} b_stok_kontrol
+    VAR_INPUT
+        tank_secim : INT;
+        tartim_ok : BOOL R_EDGE;
+        tartim_mik : REAL;
+    END_VAR
+    VAR_IN_OUT
+        stok_arr : ARRAY[1..4] OF REAL;
+    END_VAR
+END_FUNCTION_BLOCK
+

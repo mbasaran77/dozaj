@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>// reçete sonlandırma
+IF recete_son THEN
+	start := FALSE;
+END_IF;
+// tartım fonk
+fonk_big_tartim(init:=init_tartim, tartim_start:=start, set_wegiht:=tartim_set,
+				gercek_weight:=tartim_act, set_uzaklik=&gt;set_uzaklik,
+				tartim_ok:=tartim_ok, hedef=&gt;hedef, tartim_miktari=&gt;b_tartim_mik);
+// stok fonksyion
+fonk_b_stok_kontrol(tank_secim:= tankSecim, tartim_ok:= tartim_ok, 
+tartim_mik:= b_tartim_mik, stok_arr:= b_stok_arr_ekr);
+//ilklendirmeler
+init_tartim := FALSE;
+init_recete_hazirla := FALSE;
+// tank kontrolleri
+tank_kontrol_1(in_start:=start, tank_secim:=tankSecim, tank_no:=1, 
+titresim_m=&gt;big_tank_1.titresim, helezon_motor=&gt;big_tank_1.helezon, vana=&gt;big_tank_1.vana);	
+
+tank_kontrol_2(in_start:=start,  tank_secim:=tankSecim, tank_no:=2, 
+titresim_m=&gt;big_tank_2.titresim, helezon_motor=&gt;big_tank_2.helezon, vana=&gt;big_tank_2.vana);	
+
+tank_kontrol_3(in_start:=start,  tank_secim:=tankSecim, tank_no:=3, 
+titresim_m=&gt;big_tank_3.titresim, helezon_motor=&gt;big_tank_3.helezon, vana=&gt;big_tank_3.vana);	
+
+tank_kontrol_4(in_start:=start,  tank_secim:=tankSecim, tank_no:=4, 
+titresim_m=&gt;big_tank_4.titresim, helezon_motor=&gt;big_tank_4.helezon, vana=&gt;big_tank_4.vana);	
+
+// inverter kontrol 
+helezon_inv_run := big_tank_1.helezon OR big_tank_2.helezon OR big_tank_3.helezon OR big_tank_4.helezon ;
+f_inv_fr_kont(in_start:= start, hedef_uzaklik:= set_uzaklik, inverter_fr=&gt;inv_frekans_helezon);
+
+IF helezon_inv_run THEN
+	bigbag_inv_çalış := 1 ;
+	bigbag_inv_set_fr := inv_frekans_helezon ;
+ELSE
+	bigbag_inv_çalış := 0;
+END_IF;
+
+
+</Text></StructuredText></data>

@@ -1,0 +1,24 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF init THEN	&#xD;
+	tartim_ok := FALSE;&#xD;
+	hedef := 0.0 ;&#xD;
+	dara_weight := 0.0 ;&#xD;
+	tartim_miktari := 0.0;&#xD;
+END_IF;&#xD;
+&#xD;
+if tartim_start = TRUE  THEN&#xD;
+	hedef := dara_weight + set_wegiht ;&#xD;
+	set_uzaklik := hedef - gercek_weight;&#xD;
+	&#xD;
+	if gercek_weight &gt;= hedef THEN&#xD;
+		tartim_ok := TRUE;	&#xD;
+		tartim_miktari := gercek_weight - dara_weight;&#xD;
+	end_if;	&#xD;
+	&#xD;
+	r_trg_0(Clk:=tartim_ok, Q=&gt;tartim_ok_puls);&#xD;
+	&#xD;
+	IF tartim_ok_puls THEN&#xD;
+			dara_weight := gercek_weight ;&#xD;
+	END_IF;		&#xD;
+	&#xD;
+END_IF;&#xD;
+</Text></StructuredTextModel>

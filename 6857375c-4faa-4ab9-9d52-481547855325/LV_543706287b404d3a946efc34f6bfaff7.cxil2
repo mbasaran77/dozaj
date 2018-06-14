@@ -1,0 +1,124 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_543706287b404d3a946efc34f6bfaff7
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL
+    orotary : BOOL;
+    bigbag_inv_çalış : WORD;
+    bigbag_inv_set_fr : INT;
+    ohelezon_1 : BOOL;
+    ohelezon_2 : BOOL;
+    ohelezon_3 : BOOL;
+    ohelezon_4 : BOOL;
+    word_siklonOut : BYTE;
+    word_SiklonInput : BYTE;
+    ovib_1 : BOOL;
+    ovib_2 : BOOL;
+    ovib_3 : BOOL;
+    ovib_4 : BOOL;
+    ovib_5 : BOOL;
+    oklepe_1 : BOOL;
+    oklepe_2 : BOOL;
+    oklepe_3 : BOOL;
+    oklepe_4 : BOOL;
+END_VAR
+VAR RETAIN
+    receteno AT %IOM://d108 : INT;
+    recete_no_calisma AT %IOM://d110 : INT;
+    mak_recete_durum AT %IOM://d700 : INT;
+    bb_gercek_kg AT %IOM://d588 : REAL;
+END_VAR
+VAR
+    tank_set_1 : REAL := REAL#5.0;
+    tank_set_2 : REAL := REAL#0.0;
+    tank_set_3 : REAL := REAL#0.0;
+    tank_set_4 : REAL := REAL#4.0;
+    tartim_act : REAL := REAL#0.0;
+    start : BOOL := BOOL#False;
+    f_recete_hazirla : \\recete_hazırla;
+    recete_son : BOOL;
+    tank_degistir : BOOL;
+    tank_set : ARRAY[1..4] OF REAL;
+    init_tartim : BOOL;
+    tartim_set : REAL;
+    set_uzaklik : REAL;
+    tartim_ok : BOOL;
+    fonk_big_tartim : \\tartim_fonk;
+    ek_rec_hazırla AT %IOM://w10.00 : BOOL;
+    ek_rec_iptal AT %IOM://w10.04 : BOOL;
+    tankSecim : INT;
+    hedef : REAL;
+    i_start : BOOL;
+    i_stop : BOOL;
+    init_recete_hazirla : BOOL;
+    tank_kontrol_1 : \\bigbag_kontrol;
+    tank_kontrol_2 : \\bigbag_kontrol;
+    tank_kontrol_3 : \\bigbag_kontrol;
+    tank_kontrol_4 : \\bigbag_kontrol;
+    big_tank_1 : \\b_tank_1;
+    big_tank_2 : \\b_tank_1;
+    big_tank_3 : \\b_tank_1;
+    big_tank_4 : \\b_tank_1;
+    b_stok_arr_ekr : ARRAY[1..4] OF REAL := [REAL#25, REAL#30, REAL#35, REAL#40];
+    b_tartim_mik : REAL;
+    fonk_b_stok_kontrol : \\b_stok_kontrol;
+    b_bunke_dolu : BOOL;
+    f_tar_bb : \\tartim_start_stop;
+    f_bb_recete : \\bb_recete;
+    helezon_inv_run : BOOL;
+    inv_frekans_helezon : INT;
+    f_inv_fr_kont : \\bb_inv_fr_kontrol;
+    helezon1 : BOOL;
+    t_b_helezon1 AT %IOM://w1.00 : BOOL;
+    ekr_lamba_çıkış AT %IOM://w17.00 : ARRAY[0..117] OF bool;
+    helezon2 : BOOL;
+    t_b_helezon2 AT %IOM://w1.01 : BOOL;
+    helezon3 : BOOL;
+    t_b_helezon3 AT %IOM://w1.02 : BOOL;
+    helezon4 : BOOL;
+    t_b_helezon4 AT %IOM://w1.03 : BOOL;
+    t_b_rotary AT %IOM://w0.07 : BOOL;
+    test_helezon_aktif : BOOL;
+    word_ekr_SiklonOut AT %IOM://W28 : WORD;
+    word_ekr_SiklonInput AT %IOM://w27 : WORD;
+    vibrasyon1 : BOOL;
+    t_b_vib1 AT %IOM://w0.00 : BOOL;
+    vibrasyon2 : BOOL;
+    t_b_vib2 AT %IOM://w0.01 : BOOL;
+    vibrasyon3 : BOOL;
+    t_b_vib3 AT %IOM://w0.02 : BOOL;
+    vibrasyon4 : BOOL;
+    t_b_vib4 AT %IOM://w0.03 : BOOL;
+    t_b_vib5 AT %IOM://w0.04 : BOOL;
+    bb_tarti_vib : BOOL;
+    klepe1 : BOOL;
+    t_b_klepe1 AT %IOM://w0.09 : BOOL;
+    klepe2 : BOOL;
+    t_b_klepe2 AT %IOM://w0.10 : BOOL;
+    klepe3 : BOOL;
+    t_b_klepe3 AT %IOM://w0.11 : BOOL;
+    klepe4 : BOOL;
+    t_b_klepe4 AT %IOM://w0.12 : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

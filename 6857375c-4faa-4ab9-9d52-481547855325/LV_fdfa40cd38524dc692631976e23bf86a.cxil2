@@ -799,8 +799,8 @@ VAR
     tank4ok : BOOL;
     tank1ok : BOOL;
     timer1 : TON;
-    fb_reçete : \\recete_bigbag;
-    fb_reçete_hazırla : \\recete_hazırla;
+    fb_reçete : \\bb_recete;
+    fb_reçete_hazırla : \\recete_hazırla_old;
     fb_big_tartım : \\big_tartım;
     fb_big_tanktan_tartıya : \\big_tanktan_tartıya;
     ek_rec_hazırla AT %IOM://w10.00 : BOOL;

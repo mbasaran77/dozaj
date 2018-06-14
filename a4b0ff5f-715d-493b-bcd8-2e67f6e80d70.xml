@@ -99,7 +99,5 @@
     <Variable DataTypeName="INT" Name="tank_seçim" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="b975f4a5-e59a-4ebf-b579-5ff5d5c89673" Order="45" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_IN_OUT" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
     <Variable DataTypeName="BOOL" Name="tartim_ok" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="aa75f186-628b-4ddd-ad8d-dcba2da9b9ff" Order="46" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_OUTPUT" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
   </VariableGroup>
-  <VariableGroup Name="VAR_EXTERNAL" Attribute="External" ViewType="ExternalGroup">
-    <Variable DataTypeName="BOOL" Name="orotary" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="fc74b0a0-9f1a-4c9e-9e0a-a1ea8d92fb09" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
-  </VariableGroup>
+  <VariableGroup Name="VAR_EXTERNAL" Attribute="External" ViewType="ExternalGroup" />
 </data>

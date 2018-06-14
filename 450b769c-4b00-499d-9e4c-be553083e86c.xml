@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>tank_set [1] := tank_set_1;
+tank_set [2] := tank_set_2;
+tank_set [3] := tank_set_3;
+tank_set [4] := tank_set_4;
+tank_degistir := tartim_ok ;
+tartim_ok := FALSE;
+tartim_act := bb_gercek_kg ;</Text></StructuredText></data>

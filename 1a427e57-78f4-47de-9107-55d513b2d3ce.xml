@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <data>
-  <DataType Name="" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
+  <DataType Name="Data Types" BaseType="" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="">
     <DataType Name="_eMC_GROUP_USE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="2f866213-7162-4143-8188-5c18f02b9f9b">
       <DataType Name="_mcNoneGroup" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="18652a12-2478-4655-942c-3b7f5790c22a" />
       <DataType Name="_mcUnusedGroup" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="11a30a7b-9a45-4355-85f7-abce35a7754a" />
@@ -910,6 +910,13 @@
     <DataType Name="_eMC_COUNT_MODE" BaseType="ENUM" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="c6098fe3-bea4-4fd5-9b40-c73e98e8b19f">
       <DataType Name="_mcCountModeLinear" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="2189b24f-ecd1-4c76-a146-29716f20e176" />
       <DataType Name="_mcCountModeRotary" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="433c6d25-3e63-4c1f-8a46-9272626212a1" />
+    </DataType>
+    <DataType Name="b_tank_1" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="NJ" Id="e1f6dc6d-e246-4f86-a867-ad546b4e5433">
+      <DataType Name="helezon" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="b96a4e3c-a38e-4e9e-a4cc-849de9c3e061" />
+      <DataType Name="titresim" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3a41e2a1-7ced-419b-982c-0f2682687c96" />
+      <DataType Name="vana" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="de1c7169-bc39-41d3-8a76-6aa458022f42" />
+      <DataType Name="frekans" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="4fee9e93-000d-471a-a9e2-93ab549a14f2" />
+      <DataType Name="stok" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="d3f3fa4d-acbd-4709-beda-a6b7fd7b941d" />
     </DataType>
   </DataType>
 </data>

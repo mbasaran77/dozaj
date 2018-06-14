@@ -1,6 +1,6 @@
 MODULE NX END_MODULE {USING<\\NX>}
 
-FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} recete_bigbag
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} bb_recete
     VAR_INPUT
         giriş : BOOL;
         receteNo : INT;

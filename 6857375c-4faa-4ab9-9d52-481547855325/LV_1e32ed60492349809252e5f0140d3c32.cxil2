@@ -1,0 +1,38 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_1e32ed60492349809252e5f0140d3c32
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    tartim_start : BOOL;
+    set_wegiht : REAL;
+    gercek_weight : REAL;
+    dara_weight : REAL;
+END_VAR
+VAR_OUTPUT
+    set_uzaklik : REAL;
+END_VAR
+VAR_INPUT
+    tartim_ok : REAL;
+END_VAR
+VAR
+    hedef : REAL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

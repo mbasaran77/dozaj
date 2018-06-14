@@ -1,0 +1,14 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF in_start THEN&#xD;
+	hedef_uzak_int := REAL_TO_INT(hedef_uzaklik)*10;&#xD;
+	CASE hedef_uzak_int OF&#xD;
+	    0..50 		: inverter_fr :=100;&#xD;
+		51..100 	: inverter_fr :=300;&#xD;
+		101..200 	: inverter_fr :=500;&#xD;
+	    201..400 	: inverter_fr :=1000;&#xD;
+		401..1000 : inverter_fr :=2000;	&#xD;
+	ELSE&#xD;
+	    inverter_fr:=5000;&#xD;
+	END_CASE;&#xD;
+ELSE&#xD;
+	inverter_fr := 0;&#xD;
+END_IF;</Text></StructuredTextModel>

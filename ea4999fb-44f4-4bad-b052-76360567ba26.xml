@@ -32,7 +32,5 @@
   </VariableGroup>
   <VariableGroup Name="VAR_EXTERNAL" Attribute="External" ViewType="ExternalGroup">
     <Variable DataTypeName="ARRAY[0..3] OF REAL" Name="b_recete_set" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="79f020c0-ce9f-4a79-9f59-5809379a32d4" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
-    <Variable DataTypeName="BOOL" Name="i_fan_termik" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="63e97128-0b29-43ef-aaec-bbd59297ae91" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
-    <Variable DataTypeName="BOOL" Name="orotary" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="11ac16a1-6e08-499a-8c1e-4146237aa9dd" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
   </VariableGroup>
 </data>

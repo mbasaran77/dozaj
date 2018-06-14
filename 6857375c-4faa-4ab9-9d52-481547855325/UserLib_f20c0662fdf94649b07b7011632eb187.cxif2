@@ -1,6 +1,6 @@
 MODULE NX END_MODULE {USING<\\NX>}
 
-FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} recete_hazırla
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} recete_hazırla_old
     VAR_INPUT
         fonk_enable : BOOL;
     END_VAR

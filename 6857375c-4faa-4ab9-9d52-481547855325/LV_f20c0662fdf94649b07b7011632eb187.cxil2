@@ -16,8 +16,6 @@ __VAR_SYSTEM
 __END_VAR
 VAR_EXTERNAL
     b_recete_set : ARRAY[0..3] OF REAL;
-    i_fan_termik : BOOL;
-    orotary : BOOL;
 END_VAR
 VAR_INPUT
     fonk_enable : BOOL;
