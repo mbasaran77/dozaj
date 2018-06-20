@@ -36,6 +36,6 @@
     <Variable DataTypeName="BOOL" Name="alarm" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="534b17af-f9f0-423f-afe9-b2618d4d7a54" Order="13" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_OUTPUT" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
   </VariableGroup>
   <VariableGroup Name="VAR_EXTERNAL" Attribute="External" ViewType="ExternalGroup">
-    <Variable DataTypeName="BOOL" Name="orotary" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="33b9d719-fd32-4f34-9798-eaae8484dd51" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+    <Variable DataTypeName="BOOL" Name="o_rotary" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="33b9d719-fd32-4f34-9798-eaae8484dd51" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
   </VariableGroup>
 </data>

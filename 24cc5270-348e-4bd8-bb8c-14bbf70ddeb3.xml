@@ -1,0 +1,8 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>&#xD;
+tmr_1(In:=tank_poz_git, PT:=T#5s, Q=&gt;temp, ET=&gt;et);&#xD;
+&#xD;
+IF temp THEN&#xD;
+	tank_poz_ok := TRUE;&#xD;
+END_IF;&#xD;
+&#xD;
+</Text></StructuredTextModel>

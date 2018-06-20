@@ -1,0 +1,10 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF in_start  THEN&#xD;
+	sarsak_role[tank_secim] := TRUE; // sarsak inverter röle&#xD;
+	vib_air[tank_secim] := TRUE; // havalı çalışanlar&#xD;
+	sarsak:=TRUE; // sarsak çalış&#xD;
+ELSE&#xD;
+	sarsak_role[tank_secim] := FALSE;&#xD;
+	vib_air[tank_secim] := FALSE;&#xD;
+	sarsak:=FALSE;		&#xD;
+END_IF;&#xD;
+</Text></StructuredTextModel>

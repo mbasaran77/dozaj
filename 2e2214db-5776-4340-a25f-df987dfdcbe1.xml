@@ -27,14 +27,4 @@ titresim_m=&gt;big_tank_4.titresim, helezon_motor=&gt;big_tank_4.helezon, vana=&
 
 // inverter kontrol 
 helezon_inv_run := big_tank_1.helezon OR big_tank_2.helezon OR big_tank_3.helezon OR big_tank_4.helezon ;
-f_inv_fr_kont(in_start:= start, hedef_uzaklik:= set_uzaklik, inverter_fr=&gt;inv_frekans_helezon);
-
-IF helezon_inv_run THEN
-	bigbag_inv_çalış := 1 ;
-	bigbag_inv_set_fr := inv_frekans_helezon ;
-ELSE
-	bigbag_inv_çalış := 0;
-END_IF;
-
-
-</Text></StructuredText></data>
+f_inv_fr_kont(in_start:= start, hedef_uzaklik:= set_uzaklik, inverter_fr=&gt;inv_frekans_helezon);</Text></StructuredText></data>

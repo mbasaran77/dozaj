@@ -15,8 +15,6 @@ __VAR_SYSTEM
     P_PRGER : BOOL;
 __END_VAR
 VAR
- _Diff3_8eda8f7bda4045f6ada32d9d028757d6: BOOL := TRUE;
- _Diff4_8eda8f7bda4045f6ada32d9d028757d6: BOOL := TRUE;
  _tmpRslt_STRING1986: STRING[1986] {N<D>};
 END_VAR
 VAR_EXTERNAL CONSTANT
@@ -29,7 +27,7 @@ VAR_EXTERNAL
     mikro_rotary_çıkış_fr_ekran : INT;
     iacil_stop : BOOL;
     iblower_termik : BOOL;
-    b_stok_arr_ekr : ARRAY[0..3] OF REAL;
+    b_stok_arr_ekr : ARRAY[1..4] OF REAL;
     i_fan_termik : BOOL;
     ai_siklon_loadcell : INT;
     iinvertör_1 : BOOL;
@@ -147,7 +145,7 @@ VAR_EXTERNAL
     im_loadcell : INT;
     oblower : BOOL;
     ofan : BOOL;
-    orotary : BOOL;
+    o_rotary : BOOL;
     ohelezon_1 : BOOL;
     ohelezon_2 : BOOL;
     ohelezon_3 : BOOL;
@@ -546,7 +544,6 @@ VAR
     fb_m_adc : \\adc;
     timer11 : TON;
     ekr_m_rec_hazırla AT %IOM://w10.03 : BOOL;
-    FB_M_RECETE : \\mik_recete;
     fb_m_tank_seçim : \\mik_rec_tank_seç;
     fb_m_tartma : \\m_tartım;
     tankset1 : REAL;
@@ -800,7 +797,6 @@ VAR
     tank1ok : BOOL;
     timer1 : TON;
     fb_reçete : \\bb_recete;
-    fb_reçete_hazırla : \\recete_hazırla_old;
     fb_big_tartım : \\big_tartım;
     fb_big_tanktan_tartıya : \\big_tanktan_tartıya;
     ek_rec_hazırla AT %IOM://w10.00 : BOOL;

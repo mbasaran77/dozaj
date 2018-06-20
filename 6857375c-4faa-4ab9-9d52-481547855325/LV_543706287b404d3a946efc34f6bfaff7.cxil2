@@ -15,10 +15,10 @@ __VAR_SYSTEM
     P_PRGER : BOOL;
 __END_VAR
 VAR
+ _Diff1_caa770c4ee6842c1a8ccd6603ebd232f: BOOL := FALSE;
  _tmpRslt_STRING1986: STRING[1986] {N<D>};
 END_VAR
 VAR_EXTERNAL
-    orotary : BOOL;
     bigbag_inv_çalış : WORD;
     bigbag_inv_set_fr : INT;
     ohelezon_1 : BOOL;
@@ -36,12 +36,13 @@ VAR_EXTERNAL
     oklepe_2 : BOOL;
     oklepe_3 : BOOL;
     oklepe_4 : BOOL;
+    b_stok_arr_ekr : ARRAY[1..4] OF REAL;
+    bb_gercek_kg : REAL;
 END_VAR
 VAR RETAIN
     receteno AT %IOM://d108 : INT;
     recete_no_calisma AT %IOM://d110 : INT;
     mak_recete_durum AT %IOM://d700 : INT;
-    bb_gercek_kg AT %IOM://d588 : REAL;
 END_VAR
 VAR
     tank_set_1 : REAL := REAL#5.0;
@@ -74,7 +75,6 @@ VAR
     big_tank_2 : \\b_tank_1;
     big_tank_3 : \\b_tank_1;
     big_tank_4 : \\b_tank_1;
-    b_stok_arr_ekr : ARRAY[1..4] OF REAL := [REAL#25, REAL#30, REAL#35, REAL#40];
     b_tartim_mik : REAL;
     fonk_b_stok_kontrol : \\b_stok_kontrol;
     b_bunke_dolu : BOOL;
@@ -114,6 +114,8 @@ VAR
     t_b_klepe3 AT %IOM://w0.11 : BOOL;
     klepe4 : BOOL;
     t_b_klepe4 AT %IOM://w0.12 : BOOL;
+    bunker_dolu_ekr AT %IOM://w14.00 : BOOL;
+    onay_bunker_dolu_ekr AT %IOM://w14.02 : BOOL;
 END_VAR
 END_INTERFACE
 MODULE NX

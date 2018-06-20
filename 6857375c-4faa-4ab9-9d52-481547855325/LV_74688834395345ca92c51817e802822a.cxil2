@@ -1,0 +1,39 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_74688834395345ca92c51817e802822a
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    tank_poz_git : BOOL;
+END_VAR
+VAR_OUTPUT
+    out : BOOL;
+END_VAR
+VAR_IN_OUT
+    tank_poz_ok : BOOL;
+END_VAR
+VAR_OUTPUT
+    et : TIME;
+END_VAR
+VAR
+    tmr_1 : TON;
+    temp : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

@@ -1,0 +1,113 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_bc95fa176009427e83796051a616fd8e
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _Diff1_be557c515f164bcaaf74c08b6bc56475: BOOL := FALSE;
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL
+    bb_gercek_kg : REAL;
+    siklon_tartım : REAL;
+    word_siklonOut : BYTE;
+    word_SiklonInput : BYTE;
+    ovib_5 : BOOL;
+    oblower : BOOL;
+    ofan : BOOL;
+    o_fan_siklon : BOOL;
+    o_sik_klape : BOOL;
+    o_mikro_kelebek : BOOL;
+    o_sik_kelebek : BOOL;
+    o_rotary : BOOL;
+    ovib_6 : BOOL;
+    o_sik_vib_motor : BOOL;
+    opatlaç : BOOL;
+    o_sik_patlaçV : BOOL;
+    oklepe_5 : BOOL;
+    o_bigbag_kelebek : BOOL;
+    oklepe_6 : BOOL;
+    bigbag_inv_çalış : WORD;
+    bigbag_inv_set_fr : INT;
+END_VAR
+VAR RETAIN
+    bb_rot_freq_set_ekr AT %IOM://d702 : INT;
+END_VAR
+VAR
+    siklona_gönder : BOOL;
+    bb_send_0 : \\sendSiklon;
+    rotary : BOOL;
+    bb_tarti_vana : BOOL;
+    bb_blower : BOOL;
+    bb_tarti_vib : BOOL;
+    bb_siklon_ok : BOOL;
+    f_eksilme : \\eksilme_kontrol;
+    eksilme_yok : BOOL;
+    malzeme_bitti : BOOL;
+    f_siklon : \\siklon_kontrol;
+    siklon_tartim : REAL;
+    siklon : \\siklon_struct;
+    f_artma_k : \\artma_kontrol;
+    artma_yetersiz : BOOL;
+    f_start_stop_inti : \\start_stop_init;
+    i_siklona_gönder : BOOL;
+    i_stop : BOOL;
+    init : BOOL;
+    init_bos : BOOL;
+    bunker_kilo : REAL;
+    siklon_kilo : REAL;
+    fark_bunker_siklon : REAL;
+    son_timer : TON;
+    islem_son : BOOL;
+    islem_son_elapsed : TIME;
+    ekr_bb_siklona_gönder AT %IOM://w10.01 : BOOL;
+    ekr_siklon_iptal AT %IOM://w10.02 : BOOL;
+    bb_rec_hazırla : BOOL;
+    siklon_boş : BOOL;
+    word_ekr_SiklonOut AT %IOM://W28 : WORD;
+    word_ekr_SiklonInput AT %IOM://w27 : WORD;
+    t_b_vib5 AT %IOM://w0.04 : BOOL;
+    ekr_lamba_çıkış AT %IOM://w17.00 : ARRAY[0..117] OF bool;
+    t_b_blower AT %IOM://w0.06 : BOOL;
+    t_b_fan AT %IOM://w0.08 : BOOL;
+    t_siklon_fan AT %IOM://w29.06 : BOOL;
+    fan_bb : BOOL;
+    fan_siklon_mikro : BOOL;
+    t_siklon_klape AT %IOM://w29.05 : BOOL;
+    t_mikro_kelebek AT %IOM://w29.02 : BOOL;
+    siklon_m_kel_v : BOOL;
+    t_siklon_kelebek AT %IOM://w29.04 : BOOL;
+    rotary0 : BOOL;
+    t_b_rotary AT %IOM://w0.07 : BOOL;
+    vibrasyon6 : BOOL;
+    t_b_vib6 AT %IOM://w0.05 : BOOL;
+    t_siklon_vib AT %IOM://w29.00 : BOOL;
+    t_b_patlaç AT %IOM://w1.04 : BOOL;
+    t_siklon_patlac AT %IOM://w29.01 : BOOL;
+    patlac_bb : BOOL;
+    patlac_siklon_mikro : BOOL;
+    t_b_klepe5 AT %IOM://w0.13 : BOOL;
+    t_b_klepe6 AT %IOM://w0.14 : BOOL;
+    vana_siiklon_bb : BOOL;
+    t_bibbag_kelebek AT %IOM://w29.03 : BOOL;
+    et_eksilme_bb_s : TIME;
+    et_artma_bb_s : TIME;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

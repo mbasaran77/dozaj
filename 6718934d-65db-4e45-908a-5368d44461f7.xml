@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>tank_degistir := tartim_ok ;
+tartim_ok := FALSE;
+tartim_act := m_tartı;
+
+IF-0.15&lt;=m_tartı AND m_tartı&lt;=0.15 THEN
+	tarti_bos := TRUE;
+ELSE
+	tarti_bos := FALSE;
+END_IF;</Text></StructuredText></data>

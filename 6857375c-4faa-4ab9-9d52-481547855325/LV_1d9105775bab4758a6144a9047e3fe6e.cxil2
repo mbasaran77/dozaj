@@ -1,0 +1,115 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_1d9105775bab4758a6144a9047e3fe6e
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL
+    im_loadcell : INT;
+END_VAR
+VAR RETAIN
+    recete_no AT %IOM://d112 : INT;
+    prg_no AT %IOM://d114 : INT;
+    recete_durum AT %IOM://d703 : INT;
+    m_tartı AT %IOM://d590 : REAL;
+    m_offset AT %IOM://d98 : INT;
+    m_skala AT %IOM://d100 : REAL;
+    m_loadcell_okunan AT %IOM://d610 : INT;
+    ileri_hızı AT %IOM://d166 : REAL;
+    dönüş_hızı AT %IOM://d168 : REAL;
+    jog_hızı AT %IOM://d170 : REAL;
+    ekr_poz1 AT %IOM://d120 : REAL;
+    ekr_poz2 AT %IOM://d122 : REAL;
+    ekr_poz3 AT %IOM://d124 : REAL;
+    ekr_poz4 AT %IOM://d126 : REAL;
+    ekr_poz5 AT %IOM://d128 : REAL;
+    ekr_poz6 AT %IOM://d130 : REAL;
+    ekr_poz7 AT %IOM://d132 : REAL;
+    ekr_poz8 AT %IOM://d134 : REAL;
+    ekr_poz9 AT %IOM://d136 : REAL;
+    ekr_poz10 AT %IOM://d138 : REAL;
+    ekr_poz11 AT %IOM://d140 : REAL;
+    ekr_poz12 AT %IOM://d142 : REAL;
+    ekr_poz13 AT %IOM://d144 : REAL;
+    ekr_poz14 AT %IOM://d146 : REAL;
+    ekr_poz15 AT %IOM://d148 : REAL;
+    ekr_poz16 AT %IOM://d150 : REAL;
+    ekr_poz17 AT %IOM://d152 : REAL;
+    ekr_poz18 AT %IOM://d154 : REAL;
+    ekr_poz19 AT %IOM://d156 : REAL;
+    ekr_poz20 AT %IOM://d158 : REAL;
+    ekr_kefe_pozisyon AT %IOM://d160 : REAL;
+    ekr_kova_pozisyon AT %IOM://d272 : REAL;
+    hızlama AT %IOM://d172 : REAL;
+    yavaşlama AT %IOM://d174 : REAL;
+END_VAR
+VAR
+    ekr_kyt AT %IOM://w10.08 : BOOL;
+    ekr_sil AT %IOM://w10.07 : BOOL;
+    set_recete_arr : ARRAY[1..40] OF REAL;
+    f_miko_recete : \\mik_recete_kyt;
+    m_ariza : BOOL;
+    m_recete_haz : BOOL;
+    f_mikro_rec_haz : \\mikro_recete_hazırla;
+    tartim_set : REAL;
+    recete_son : BOOL;
+    tank_secim : INT;
+    f_mikro_start : \\start_stop_init;
+    start : BOOL;
+    stop : BOOL;
+    init_tartim : BOOL;
+    init_recete_hazirla : BOOL;
+    tank_set_1 : REAL := REAL#2.5;
+    tank_set_2 : REAL := REAL#5;
+    tank_set_5 : REAL := REAL#8;
+    tank_set_11 : REAL := REAL#12;
+    tartim_act : REAL;
+    set_uzaklik : REAL;
+    tartim_ok : BOOL;
+    hedef : REAL;
+    tank_degistir : BOOL;
+    f_m_tartim : \\tartim_fonk;
+    tank_poz_git : BOOL;
+    f_tp : \\tank_pozisyon;
+    et : TIME;
+    tank_poz_ok : BOOL;
+    tartim_miktari : REAL;
+    recete_haz_ekr AT %IOM://w10.03 : BOOL;
+    recete_ipt_ekr AT %IOM://w26.05 : BOOL;
+    fb_m_adc : \\adc;
+    tarti_bos : BOOL;
+    servo_ileri_hızı : LREAL;
+    servo_geri_hızı : LREAL;
+    servo_jog_hızı : LREAL;
+    poz_kefe : LREAL;
+    poz_kova : LREAL;
+    servo_hızlanma : LREAL;
+    servo_yavaşlama : LREAL;
+    servo_fab_ayar AT %IOM://w14.04 : BOOL;
+    poz_arr : ARRAY[1..20] OF LREAL;
+    hedef_pozisyon : LREAL;
+    f_mt_kontrol : \\mikro_tank_kontrol;
+    sarsak : BOOL;
+    sarsak_role_arr : ARRAY[1..40] OF BOOL;
+    vib_air_arr : ARRAY[1..40] OF BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

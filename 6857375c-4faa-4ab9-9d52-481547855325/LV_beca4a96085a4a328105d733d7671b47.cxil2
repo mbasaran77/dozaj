@@ -1,0 +1,44 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_beca4a96085a4a328105d733d7671b47
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR
+ _tmpRslt_STRING1986: STRING[1986] {N<D>};
+END_VAR
+VAR_EXTERNAL
+    ib_loadcell : INT;
+    ai_siklon_loadcell : INT;
+    bb_gercek_kg : REAL;
+    siklon_tartım : REAL;
+END_VAR
+VAR RETAIN
+    skala AT %IOM://d90 : REAL;
+    ofset AT %IOM://d88 : INT;
+    siklon_skala AT %IOM://d106 : REAL;
+    siklon_ofset AT %IOM://d104 : INT;
+    b_loadcell_okunan AT %IOM://d612 : INT;
+    b_siklon_loadcell_okunan AT %IOM://d614 : INT;
+END_VAR
+VAR
+    fb_adc : \\adc;
+    fb_b_s_tartı : \\adc;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

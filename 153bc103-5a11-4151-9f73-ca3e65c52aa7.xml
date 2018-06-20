@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF init_recete_hazirla THEN tank_poz_ok := FALSE; END_IF;
+
+init_tartim := FALSE;
+init_recete_hazirla := FALSE;
+
+IF tank_poz_ok THEN tank_poz_git := FALSE; END_IF;
+
+IF tartim_ok THEN tank_poz_ok := FALSE; END_IF;</Text></StructuredText></data>

@@ -1,0 +1,32 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_734932df8eeb4f3e979ad3f4b48813f3
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    in_start : BOOL;
+    tank_secim : INT;
+END_VAR
+VAR_OUTPUT
+    sarsak : BOOL;
+    vib_air : ARRAY[1..40] OF BOOL;
+    sarsak_role : ARRAY[1..40] OF BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

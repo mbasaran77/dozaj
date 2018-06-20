@@ -15,7 +15,7 @@ __VAR_SYSTEM
     P_PRGER : BOOL;
 __END_VAR
 VAR_EXTERNAL
-    orotary : BOOL;
+    o_rotary : BOOL;
 END_VAR
 VAR_INPUT
     execute : BOOL;

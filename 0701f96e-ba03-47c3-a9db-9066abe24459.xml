@@ -1,0 +1,27 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF fonk_enable THEN&#xD;
+	r_edge_1(Clk:=fonk_enable, Q=&gt;init);&#xD;
+	IF init THEN&#xD;
+		ilk_tartim :=tartim;&#xD;
+	END_IF;&#xD;
+	&#xD;
+	timer_on_1(In:=timer_start, PT:=period, Q=&gt;time_ok, ET=&gt;elapsed_time);&#xD;
+	timer_start := TRUE;&#xD;
+	&#xD;
+	IF time_ok THEN&#xD;
+	&#xD;
+		timer_start := FALSE;&#xD;
+		son_tartim:=tartim;&#xD;
+		fark_tartim := son_tartim - ilk_tartim;&#xD;
+		ilk_tartim := son_tartim;&#xD;
+		IF  fark_tartim&gt;hedef THEN&#xD;
+			artma_yetersiz := FALSE;&#xD;
+		ELSE&#xD;
+			artma_yetersiz :=TRUE;&#xD;
+		END_IF;&#xD;
+	&#xD;
+	END_IF;&#xD;
+ELSE&#xD;
+	artma_yetersiz := FALSE;&#xD;
+&#xD;
+END_IF;&#xD;
+</Text></StructuredTextModel>

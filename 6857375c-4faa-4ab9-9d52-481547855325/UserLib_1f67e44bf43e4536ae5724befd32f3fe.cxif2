@@ -1,0 +1,17 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} siklon_kontrol
+    VAR_INPUT
+        start : BOOL;
+        siklon_tartim : REAL;
+        patlac_time : TIME;
+        fan_time : TIME;
+        genel_period : TIME;
+    END_VAR
+    VAR_OUTPUT
+        o_fan : BOOL;
+        o_patlac : BOOL;
+        o_vana : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

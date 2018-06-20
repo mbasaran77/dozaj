@@ -1,0 +1,51 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_1f67e44bf43e4536ae5724befd32f3fe
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    start : BOOL;
+    siklon_tartim : REAL;
+    patlac_time : TIME;
+    fan_time : TIME;
+    genel_period : TIME;
+END_VAR
+VAR_OUTPUT
+    o_fan : BOOL;
+    o_patlac : BOOL;
+    o_vana : BOOL;
+END_VAR
+VAR
+    timer_patlac : TON;
+    timer_fan : TON;
+    timer_genel : TON;
+    g_tm_pat : BOOL;
+    g_tm_fan : BOOL;
+    g_tm_gen : BOOL;
+    r_trg : R_TRIG;
+    init : BOOL;
+    pt_time_ok : BOOL;
+    pt_elapsed : TIME;
+    fan_time_ok : BOOL;
+    fan_elapsed : TIME;
+    gen_time_ok : BOOL;
+    gen_elapsed : TIME;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

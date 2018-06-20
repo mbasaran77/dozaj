@@ -1,0 +1,15 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} eksilme_kontrol
+    VAR_INPUT
+        fonk_enable : BOOL;
+        tartim : REAL;
+        miktar : REAL;
+        period : TIME;
+    END_VAR
+    VAR_OUTPUT
+        eksilme_yetersiz : BOOL;
+        elapsed_time : TIME;
+    END_VAR
+END_FUNCTION_BLOCK
+

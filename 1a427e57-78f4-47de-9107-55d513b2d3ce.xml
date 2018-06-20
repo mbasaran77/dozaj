@@ -911,12 +911,22 @@
       <DataType Name="_mcCountModeLinear" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="0" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="2189b24f-ecd1-4c76-a146-29716f20e176" />
       <DataType Name="_mcCountModeRotary" BaseType="DINT" ArrayType="" Length="" InitialValue="" EnumValue="1" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="true" Order="0" OffsetType="" Id="433c6d25-3e63-4c1f-8a46-9272626212a1" />
     </DataType>
-    <DataType Name="b_tank_1" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="NJ" Id="e1f6dc6d-e246-4f86-a867-ad546b4e5433">
+    <DataType Name="b_tank_1" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="1" OffsetType="NJ" Id="e1f6dc6d-e246-4f86-a867-ad546b4e5433">
       <DataType Name="helezon" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="b96a4e3c-a38e-4e9e-a4cc-849de9c3e061" />
       <DataType Name="titresim" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="3a41e2a1-7ced-419b-982c-0f2682687c96" />
       <DataType Name="vana" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="de1c7169-bc39-41d3-8a76-6aa458022f42" />
       <DataType Name="frekans" BaseType="INT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="4fee9e93-000d-471a-a9e2-93ab549a14f2" />
       <DataType Name="stok" BaseType="REAL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="d3f3fa4d-acbd-4709-beda-a6b7fd7b941d" />
+    </DataType>
+    <DataType Name="siklon_struct" BaseType="STRUCT" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="NJ" Id="6672812c-2458-4e5d-8f85-7f8fdbb495cd">
+      <DataType Name="fan" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="75da09e5-3b5b-4b11-af3b-9fb01e1c8b2f" />
+      <DataType Name="patlac" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="137fb3ee-cb88-46e9-a19d-a312e3264cca" />
+      <DataType Name="vana_bb" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="a53550a6-7187-4b90-a11b-076851c8a332" />
+      <DataType Name="vana_mikro" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="d7b7366a-2be9-4c74-af6b-46f3320f514b" />
+      <DataType Name="vibrator" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="51a7bba6-387a-42fc-bc75-3574f0ee3477" />
+      <DataType Name="vana" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="9f15d123-dd40-44b2-bd35-99e2e39f2243" />
+      <DataType Name="klape_cuval" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="12f999cf-e8c2-4f71-95e1-e6a72b4501ff" />
+      <DataType Name="klape_mikser" BaseType="BOOL" ArrayType="" Length="" InitialValue="" EnumValue="" Comment="" OffsetChannel="" OffsetBit="" IsControllerDefinedType="false" Order="0" OffsetType="" Id="8c21cec1-0f59-40bb-842a-7824c40ced46" />
     </DataType>
   </DataType>
 </data>

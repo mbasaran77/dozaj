@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>// reçete sonlandırma
+IF recete_son THEN
+	start := FALSE;
+END_IF;
+
+//mikro_tartim(init:=init_tartim, tartim_start:=m_recete_haz, set_wegiht:=tartim_set, 
+//gercek_weight:=tartim_act, set_uzaklik=&gt;set_uzaklik, tartim_ok:= tartim_ok, 
+//hedef=&gt;hedef);
+
+</Text></StructuredText></data>

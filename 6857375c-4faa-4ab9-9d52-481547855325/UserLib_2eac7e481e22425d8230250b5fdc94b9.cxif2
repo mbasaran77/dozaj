@@ -1,0 +1,20 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} sendSiklon
+    VAR_INPUT
+        start : BOOL;
+        init : BOOL;
+        bb_tarti : REAL;
+        malzeme_time : TIME;
+        in_eksilme : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        rotary : BOOL;
+        vana_tarti : BOOL;
+        blower : BOOL;
+        vib_motor : BOOL;
+        fonk_end : BOOL;
+        malzeme_bitti : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

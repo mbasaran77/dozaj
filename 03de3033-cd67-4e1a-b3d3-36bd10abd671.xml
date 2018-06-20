@@ -30,6 +30,6 @@
     <Variable DataTypeName="BOOL" Name="vibrator_on" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="df63a4a4-3033-43a0-b19f-239030bd604f" Order="9" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_OUTPUT" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
   </VariableGroup>
   <VariableGroup Name="VAR_EXTERNAL" Attribute="External" ViewType="ExternalGroup">
-    <Variable DataTypeName="BOOL" Name="orotary" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="9176321d-4b44-45db-b2c7-c6e053dcd365" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
+    <Variable DataTypeName="BOOL" Name="o_rotary" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="9176321d-4b44-45db-b2c7-c6e053dcd365" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
   </VariableGroup>
 </data>

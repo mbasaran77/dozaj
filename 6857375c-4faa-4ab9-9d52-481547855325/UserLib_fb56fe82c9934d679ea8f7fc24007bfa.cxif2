@@ -1,0 +1,20 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} mik_recete_kyt
+    VAR_INPUT
+        fon_enable : BOOL;
+        receteNo : INT;
+        programNo : INT;
+    END_VAR
+    VAR_OUTPUT
+        fonk_out : BOOL;
+    END_VAR
+    VAR_OUTPUT RETAIN
+        b_recete_setM : ARRAY[1..40] OF REAL;
+    END_VAR
+    VAR_IN_OUT
+        receteKay : BOOL;
+        m_prg_sil : BOOL;
+    END_VAR
+END_FUNCTION_BLOCK
+

@@ -13,7 +13,7 @@ IF execute THEN&#xD;
 			klape_genel:= TRUE;&#xD;
 			klape_cuval :=cuvala_bosalt;&#xD;
 			klape_mikser:= miksere_bosalt;&#xD;
-	 		fb_eks_kont(excute:=execute, tartim:=tarti, miktar:=miktar, period:=period, eksilme_yetersiz=&gt;yetersiz_bosaltma);&#xD;
+	 		// fb_eks_kont(excute:=execute, tartim:=tarti, miktar:=miktar, period:=period, eksilme_yetersiz=&gt;yetersiz_bosaltma);&#xD;
 			IF yetersiz_bosaltma THEN&#xD;
 				vib_on :=TRUE;&#xD;
 			END_IF;	&#xD;

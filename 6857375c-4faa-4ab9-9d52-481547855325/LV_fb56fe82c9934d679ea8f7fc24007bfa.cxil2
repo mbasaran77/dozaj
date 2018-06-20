@@ -1,0 +1,53 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_fb56fe82c9934d679ea8f7fc24007bfa
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_EXTERNAL
+    m_tank_ekr_arr : ARRAY[0..40] OF REAL;
+END_VAR
+VAR_INPUT
+    fon_enable : BOOL;
+    receteNo : INT;
+    programNo : INT;
+END_VAR
+VAR_OUTPUT
+    fonk_out : BOOL;
+END_VAR
+VAR_OUTPUT RETAIN
+    b_recete_setM : ARRAY[1..40] OF REAL;
+END_VAR
+VAR_IN_OUT
+    receteKay : BOOL;
+    m_prg_sil : BOOL;
+END_VAR
+VAR RETAIN
+    receteM AT %IOM://d2500 : ARRAY[0..1999] OF REAL;
+    m_rec_arr AT %IOM://d8 : ARRAY[0..40] OF REAL;
+END_VAR
+VAR
+    indeks : INT;
+    point : INT;
+    recover_prgNo : INT;
+    prg_no_degisti : BOOL;
+    b : INT;
+    a : INT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

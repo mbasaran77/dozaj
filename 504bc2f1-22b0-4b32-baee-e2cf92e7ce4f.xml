@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF m_recete_haz THEN
+	hedef_pozisyon := poz_arr[tank_secim];
+END_IF;
+// servo test için hedef seçim
+IF servo_test_ekr THEN
+	FOR i:=1 TO 20 BY 1 DO
+	    IF s_test_arr_0[i] = TRUE AND (i &lt;10) THEN
+			test_hedef := poz_arr[i];
+			test_run_0 := TRUE;
+		ELSE
+			test_run_0 := FALSE;
+		END_IF;
+		IF s_test_arr_1[i] = TRUE AND (i &gt;=10) THEN
+			test_hedef := poz_arr[i];
+			test_run_1 := TRUE;
+		ELSE
+			test_run_1 := FALSE;
+		END_IF;
+	END_FOR;
+	hedef_pozisyon := test_hedef ;
+	test_poz1 := test_run_0 OR test_run_1 ;
+ELSE
+	test_poz1 := FALSE;
+END_IF;
+
+</Text></StructuredText></data>

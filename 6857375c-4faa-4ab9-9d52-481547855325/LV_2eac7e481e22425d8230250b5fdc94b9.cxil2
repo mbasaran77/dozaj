@@ -1,0 +1,42 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_2eac7e481e22425d8230250b5fdc94b9
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    start : BOOL;
+    init : BOOL;
+    bb_tarti : REAL;
+    malzeme_time : TIME;
+    in_eksilme : BOOL;
+END_VAR
+VAR_OUTPUT
+    rotary : BOOL;
+    vana_tarti : BOOL;
+    blower : BOOL;
+    vib_motor : BOOL;
+    fonk_end : BOOL;
+    malzeme_bitti : BOOL;
+END_VAR
+VAR
+    malzeme_timer : TON;
+    m_timer_on : BOOL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

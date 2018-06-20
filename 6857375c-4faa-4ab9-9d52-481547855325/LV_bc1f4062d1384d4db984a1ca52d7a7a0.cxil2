@@ -1,0 +1,44 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_bc1f4062d1384d4db984a1ca52d7a7a0
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    fonk_enable : BOOL;
+    tartim : REAL;
+    miktar : REAL;
+    period : TIME;
+END_VAR
+VAR_OUTPUT
+    artma_yetersiz : BOOL;
+    elapsed_time : TIME;
+END_VAR
+VAR
+    ilk_tartim : REAL;
+    son_tartim : REAL;
+    r_edge_1 : R_TRIG;
+    timer_on_1 : TON;
+    hedef : REAL;
+    init : BOOL;
+    timer_start : BOOL;
+    time_ok : BOOL;
+    fark_tartim : REAL;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

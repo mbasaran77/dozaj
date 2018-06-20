@@ -1,0 +1,22 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} start_stop_init
+    VAR_INPUT
+        i_start : BOOL R_EDGE;
+        i_stop : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        o_start : BOOL;
+    END_VAR
+    VAR_INPUT
+        tartim_stop : BOOL R_EDGE;
+    END_VAR
+    VAR_IN_OUT
+        o_init : BOOL;
+        init_recete_hazirla : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        durum : INT;
+    END_VAR
+END_FUNCTION_BLOCK
+

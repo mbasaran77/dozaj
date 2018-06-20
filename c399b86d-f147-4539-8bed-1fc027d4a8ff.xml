@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>IF init THEN
+	bunker_kilo := bb_gercek_kg;
+	init := FALSE;
+END_IF;
+
+IF islem_son THEN
+	siklon_kilo := siklon_tartim;
+	fark_bunker_siklon := bunker_kilo - siklon_kilo;
+END_IF;
+IF ekr_bb_siklona_gönder AND -0.05&lt;=siklon_tartım AND siklon_tartım&lt;=0.05 THEN
+	siklon_boş:=TRUE;
+ELSE
+	siklon_boş:=FALSE;
+END_IF;
+</Text></StructuredText></data>
