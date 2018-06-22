@@ -4,7 +4,7 @@
 END_IF;
 
 IF islem_son THEN
-	siklon_kilo := siklon_tartim;
+	siklon_kilo := siklon_tartım;
 	fark_bunker_siklon := bunker_kilo - siklon_kilo;
 END_IF;
 IF ekr_bb_siklona_gönder AND -0.05&lt;=siklon_tartım AND siklon_tartım&lt;=0.05 THEN

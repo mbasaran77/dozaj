@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><data><StructuredText><Text>mikro_gercek_kg := m_tartı;
+
+IF m_init THEN
+	m_bunker_kilo := mikro_gercek_kg;
+	m_init := FALSE;
+END_IF;
+
+IF m_islem_son THEN
+	siklon_kilo := siklon_tartım;
+	fark_bunker_siklon := m_bunker_kilo - siklon_kilo;
+END_IF;</Text></StructuredText></data>

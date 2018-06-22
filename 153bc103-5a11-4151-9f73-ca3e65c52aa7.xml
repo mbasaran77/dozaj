@@ -5,4 +5,7 @@ init_recete_hazirla := FALSE;
 
 IF tank_poz_ok THEN tank_poz_git := FALSE; END_IF;
 
-IF tartim_ok THEN tank_poz_ok := FALSE; END_IF;</Text></StructuredText></data>
+IF tartim_ok THEN tank_poz_ok := FALSE; END_IF;
+
+
+f_m_stok_kontrol(tank_secim:=tank_secim, tartim_ok:=tartim_ok, tartim_mik:=tartim_miktari, stok_arr:=m_stok_arr_ekr);</Text></StructuredText></data>

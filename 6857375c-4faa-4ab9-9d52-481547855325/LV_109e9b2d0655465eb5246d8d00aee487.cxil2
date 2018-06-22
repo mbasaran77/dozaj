@@ -14,9 +14,6 @@ __END_VAR
 __VAR_SYSTEM
     P_PRGER : BOOL;
 __END_VAR
-VAR_EXTERNAL
-    o_rotary : BOOL;
-END_VAR
 VAR_INPUT
     execute : BOOL;
     miksere_bosalt : BOOL;
@@ -40,7 +37,6 @@ VAR RETAIN
 END_VAR
 VAR
     bosaltma_ok : BOOL;
-    fb_eks_kont : \\eksilme_kontrol;
     yetersiz_bosaltma : BOOL;
     timer_vib : TON;
     timer_vib_1 : TON;

@@ -34,7 +34,6 @@
   </VariableGroup>
   <VariableGroup Name="VAR_EXTERNAL" Attribute="External" ViewType="ExternalGroup">
     <Variable DataTypeName="ARRAY[0..39] OF REAL" Name="m_stok_arr" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="c4c4e7a6-1013-4945-b69a-5dd9ced294c8" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
-    <Variable DataTypeName="BOOL" Name="i_fan_termik" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="d367dfca-40fe-4e6c-9e50-563046e7ebdb" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
     <Variable DataTypeName="ARRAY[0..39] OF REAL" Name="m_tartim_hata" Address="" Length="" Retained="false" InitialValue="" Comment="" NetworkPublication="NoPublication" IsReadOnlyNetwork="false" Edge="NoEdge" Id="e973885e-29ea-4810-a9e8-fb32beda3d62" Order="" IsControllerVariable="false" IsReadOnly="false" IsConstant="false" Group="VAR_EXTERNAL" IsAddedInOnlineEdit="false" InitialValueArrayLength="" />
   </VariableGroup>
 </data>

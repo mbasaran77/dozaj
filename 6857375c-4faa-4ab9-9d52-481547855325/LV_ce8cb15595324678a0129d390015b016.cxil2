@@ -114,7 +114,6 @@ VAR RETAIN
     m_tank_ekr15 AT %IOM://d536 : REAL;
     m_tank_ekr16 AT %IOM://d538 : REAL;
     m_tank_ekr17 AT %IOM://d540 : REAL;
-    fonk_start : BOOL;
 END_VAR
 VAR
     riseEdge_1 : R_TRIG;

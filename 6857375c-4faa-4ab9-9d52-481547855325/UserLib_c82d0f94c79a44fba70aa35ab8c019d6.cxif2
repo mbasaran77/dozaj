@@ -1,0 +1,24 @@
+MODULE NX END_MODULE {USING<\\NX>}
+
+FUNCTION_BLOCK {a<_n_o_t_d_i_v_i_d_e_d_!_>} bosalt_tartim_bunker
+    VAR_INPUT
+        start : BOOL;
+        tartim : REAL;
+        kapak_açık : BOOL;
+    END_VAR
+    VAR_OUTPUT
+        kapak : BOOL;
+        bunker_vana : BOOL;
+        vibrator_on : BOOL;
+    END_VAR
+    VAR_INPUT
+        esik_deger : REAL;
+    END_VAR
+    VAR_IN_OUT
+        bosaltma_ok : BOOL;
+    END_VAR
+    VAR_INPUT
+        sirkeleme_zamani : TIME;
+    END_VAR
+END_FUNCTION_BLOCK
+

@@ -1,0 +1,60 @@
+{IMPORT<ULs.cxip>}
+MODULE NX END_MODULE {USING<\\NX>}
+INTERFACE LV_fb51474480cb489190d76476f76cd28a
+VAR
+    _dmmy : BOOL;
+END_VAR
+__VAR_SYSTEM CONSTANT
+    P_On : BOOL;
+    P_Off : BOOL;
+    P_CY : BOOL;
+    P_First_RunMode : BOOL;
+    P_First_Run : BOOL;
+__END_VAR
+__VAR_SYSTEM
+    P_PRGER : BOOL;
+__END_VAR
+VAR_INPUT
+    i_start : BOOL R_EDGE;
+    i_stop : BOOL;
+END_VAR
+VAR_OUTPUT
+    o_start : BOOL;
+END_VAR
+VAR_INPUT
+    tartim_stop : BOOL R_EDGE;
+END_VAR
+VAR_IN_OUT
+    o_init : BOOL;
+    init_recete_hazirla : BOOL;
+END_VAR
+VAR_OUTPUT
+    durum : INT;
+    bunker_dolu : BOOL;
+END_VAR
+VAR_INPUT
+    b_recete_arr : ARRAY[1..40] OF REAL;
+    tartim_act : REAL;
+END_VAR
+VAR RETAIN
+    sayac : INT;
+END_VAR
+VAR
+    r_trg_2 : R_TRIG;
+    temp_start : BOOL;
+    temp_pause : BOOL;
+    temp_stop : BOOL;
+    temp_zero : BOOL;
+    temp_recete_hazirla : BOOL;
+    tmr_1 : TON;
+    temp_start_0 : BOOL;
+    q_tmr_1 : BOOL;
+    tank_secim : INT;
+END_VAR
+END_INTERFACE
+MODULE NX
+TYPE
+ _dummy4 : (_dummydummy4 := 4);
+END_TYPE
+END_MODULE
+

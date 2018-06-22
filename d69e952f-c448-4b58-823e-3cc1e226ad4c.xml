@@ -1,0 +1,3 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF tartim_ok THEN&#xD;
+	stok_arr[tank_secim] := stok_arr[tank_secim]-tartim_mik;&#xD;
+END_IF;</Text></StructuredTextModel>

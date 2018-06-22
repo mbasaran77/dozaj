@@ -1,0 +1,27 @@
+<StructuredTextModel xmlns="http://schemas.datacontract.org/2004/07/Omron.Cxap.Modules.StructuredText.Core" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Text>IF start THEN&#xD;
+	&#xD;
+	kapak := TRUE;&#xD;
+&#xD;
+	t1_ins(In:=kapak_açık, PT:=T#500ms);&#xD;
+&#xD;
+	IF t1_ins.Q THEN&#xD;
+		bunker_vana := TRUE;&#xD;
+		vibrator_on := TRUE;&#xD;
+	END_IF;&#xD;
+	tmr_2(In:=(tartim&lt;esik_deger), PT:=sirkeleme_zamani, Q=&gt;temp_bos, ET=&gt;et);&#xD;
+	IF temp_bos  THEN&#xD;
+		kapak := FALSE;&#xD;
+		bunker_vana := FALSE;&#xD;
+		vibrator_on := FALSE;&#xD;
+		bosaltma_ok := TRUE;&#xD;
+	END_IF;&#xD;
+	&#xD;
+	&#xD;
+	&#xD;
+ELSE&#xD;
+		kapak := FALSE;&#xD;
+		bunker_vana := FALSE;&#xD;
+		vibrator_on := FALSE;&#xD;
+END_IF;&#xD;
+&#xD;
+</Text></StructuredTextModel>

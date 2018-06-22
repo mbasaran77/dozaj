@@ -33,7 +33,6 @@ VAR
     index : INT;
     intChStack : INT;
     dChStack : DINT;
-    real_0 : REAL;
 END_VAR
 END_INTERFACE
 MODULE NX
