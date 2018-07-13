@@ -47,7 +47,6 @@ VAR_EXTERNAL
     om_pompa2 : BOOL;
     om_pompa3 : BOOL;
     m_stok_arr : ARRAY[0..39] OF REAL;
-    m_stok_arr_ekr : ARRAY[1..40] OF REAL;
 END_VAR
 VAR RETAIN
     test_şifresi AT %IOM://d102 : INT;
